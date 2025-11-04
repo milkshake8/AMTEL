@@ -1,0 +1,29 @@
+/* ==========================
+   _light.css
+   ========================== */
+
+[data-theme="light"] {
+  /* Couleurs principales */
+  --color-primary: #3B82F6;
+  --color-primary-dark: #0056b3;
+  --color-accent: #F59E0B;
+
+  /* Couleurs de fond */
+  --color-bg: #F9FAFB;
+  --color-bg-card: #ffffff;
+
+  /* Texte et bordures */
+  --color-text: #111827;
+  --color-border: #E5E7EB;
+
+  /* État et feedback */
+  --color-success: #28a745;
+  --color-danger: #dc3545;
+  --color-warning: #ffc107;
+  --color-info: #17a2b8;
+
+  /* Ombres */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+}

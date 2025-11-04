@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Zalando Sans SemiExpanded";
+  src: url("../assets/fonts/ZalandoSansSemiExpanded-VariableFont_wght.ttf"),
+       url("../assets/fonts/ZalandoSansSemiExpanded-Italic-VariableFont_wght.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Funnel Sans";
+  src: url("../assets/fonts/FunnelSans-VariableFont_wght.ttf");
+  font-style: normal;
+  font-display: swap;
+}

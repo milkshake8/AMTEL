@@ -1,0 +1,108 @@
+/* Barre de progression */
+.progress-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: var(--color-primary);
+  transform-origin: left;
+}
+
+.progress-bar.animate {
+  animation: progressAnim 10s linear forwards;
+}
+.degradation {
+  background-image: linear-gradient(to top, #3B9797, white);
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+}
+
+.separateur {
+  height: 5px;
+  width: 194px;
+  background-color: var(--color-secondary);
+  margin: 20px 0;
+}
+
+.valeurs{
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 33px;
+}
+.links {
+  text-decoration: none;
+  color: white;
+}
+.links:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+@keyframes progressAnim {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Animation bande défilante */
+.references-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.references-track {
+  display: flex;
+  gap: 3rem;
+  animation: scrollLeft 25s linear infinite;
+  width: max-content;
+}
+
+.reference-item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.reference-item:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.contact-fade {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

@@ -1,0 +1,32 @@
+/* ==========================
+   _containers.css
+   ========================== */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+}
+
+.section {
+  padding: var(--space-xl) 0;
+}
+
+.section-light {
+  background-color: var(--color-bg-card);
+}
+
+.section-dark {
+  background-color: var(--color-primary-dark);
+  color: var(--color-bg);
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}

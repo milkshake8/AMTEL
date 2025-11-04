@@ -1,0 +1,29 @@
+/* framework.css */
+
+/* Base */
+@import "./base/_fonts.css";
+@import './base/_reset.css';
+@import './base/_variables.css';
+@import './base/_typography.css';
+@import './base/_utilities.css';
+@import './base/_helpers.css';
+@import './base/_custom.css';
+
+/* Layout */
+@import './layout/_grid.css';
+@import './layout/_spacing.css';
+@import './layout/_containers.css';
+
+/* Components */
+@import './components/_buttons.css';
+@import './components/_cards.css';
+@import './components/_alerts.css';
+@import './components/_forms.css';
+@import './components/_navbar.css';
+
+/* Modals*/
+@import './components/_modal.css';
+
+/* Themes */
+@import './themes/_light.css';
+@import './themes/_dark.css';
