@@ -11,6 +11,7 @@ const Maintenance = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         position: "relative",
+        marginTop: "7px",
         color: "#fff",
       }}
     >
@@ -79,7 +80,18 @@ const Maintenance = () => {
           Rafraîchir la page
         </button>
       </div>
-
+          <p
+        style={{
+          position: "absolute",
+          bottom: "20px",
+          fontSize: "0.9rem",
+          opacity: 0.8,
+          zIndex: 2,
+        }}
+      >
+        © {new Date().getFullYear()} Amtel Technologie SARL — Cyborg Gen — Tous droits
+        réservés.
+      </p>
     </section>
   );
 };

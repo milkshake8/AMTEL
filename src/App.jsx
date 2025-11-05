@@ -8,7 +8,7 @@ import Footer from './components/footer.jsx';
 function App() {
   const location = useLocation();
 
-  const hideFooterRoutes = ["/maintenance"];
+  const hideFooterRoutes = ["/a-propos", "/services", "/references"];
   const shouldHideFooter = hideFooterRoutes.includes(location.pathname);
 
   return (
