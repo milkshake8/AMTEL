@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Maintenance = () => {
   return (
     <section
@@ -65,6 +67,7 @@ const Maintenance = () => {
           Merci de votre patience et de votre confiance 💙
         </p>
 
+        <NavLink to="/">  
         <button
           className="bg-secondary text-light rounded-md p-md shadow-md"
           style={{
@@ -74,11 +77,11 @@ const Maintenance = () => {
             transition: "opacity var(--transition-fast)",
           }}
           onMouseOver={(e) => (e.target.style.opacity = "0.85")}
-          onMouseOut={(e) => (e.target.style.opacity = "1")}
-          onClick={() => window.location.reload()}
+          onMouseOut={(e) => (e.target.style.opacity = "1")}    
         >
-          Rafraîchir la page
+          Retour à l'accueil
         </button>
+        </NavLink>
       </div>
           <p
         style={{

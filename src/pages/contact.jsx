@@ -1,6 +1,7 @@
 import contacts from "../css/css/assets/images/contacts.png";
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import Aside from "../components/aside";
 
 
 const Contact = () => {
@@ -61,19 +62,14 @@ const Contact = () => {
         </Helmet>
 
       {/* === SECTION HEADER === */}
-      <section className="section">
-        <div>
-            <img src={contacts} alt="illustrations de contacts" style={{
-              width: "100%",
-              maxWidth: "1361px",
-              height: "336px",
-              objectFit: "cover",
-            }} />
-        </div>
-        <h1 className="text-center" style={{marginTop:"-64px", color:"white"}}>
-          Contacts
-        </h1>
-      </section>
+      <section
+              className="about-banner"
+              style={{ backgroundImage: `url(${contacts})`, marginTop:"6px" }}
+            >
+              <div className="about-banner__overlay">
+                <h1 style={{color:"white",backgroundColor:"#132440", borderRadius:"11px", padding:"0 35px"}}>Contacts</h1>
+              </div>
+            </section>
 
       {/* === SECTION CONTENU === */}
       <section
@@ -96,24 +92,25 @@ const Contact = () => {
           {/* --- Adresse + carte --- */}
           <h2 className="text-primary mb-md">Notre adresse</h2>
 
-          <div
+          <div className="container"><div
             className="rounded-md shadow-md mb-lg"
             style={{ overflow: "hidden", height: "300px" }}
           >
             <iframe
               title="Amtel Technologie - Localisation"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.165874214303!2d-17.4676866!3d14.7166776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec10c8b88b0b12d%3A0x63b4c84d2a96e6e4!2sDakar%2C%20S%C3%A9n%C3%A9gal!5e0!3m2!1sfr!2ssn!4v1709300000000!5m2!1sfr!2ssn"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d482.2993321019018!2d-17.47062025902006!3d14.746781647998304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2ssn!4v1762357061172!5m2!1sfr!2ssn"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
             ></iframe>
-          </div>
+          </div></div>
 
           <div
       className="p-lg bg-light rounded-lg shadow-md"
       style={{ maxWidth: "1000px", margin: "0 auto" }}
+      id="contact"
     >
         {/* --- Formulaire --- */}
       <h2 className="text-primary mb-md text-center">Formulaire de contact</h2>
@@ -206,34 +203,7 @@ const Contact = () => {
         </div>
 
         {/* === Colonne droite (Aside) === */}
-        <aside
-          style={{
-            flex: "0 0 20%",
-            minWidth: "250px",
-            position: "sticky",
-            top: "100px",
-            alignSelf: "flex-start",
-          }}
-        >
-          <div className="bg-light rounded-md shadow-md p-md mb-lg">
-            <h3 className="text-primary mb-sm">Pourquoi nous choisir</h3>
-            <ul style={{ lineHeight: "1.8" }}>
-              <li>✔ Expertise technique</li>
-              <li>✔ Solutions durables</li>
-              <li>✔ Accompagnement personnalisé</li>
-              <li>✔ Fiabilité et intégrité</li>
-            </ul>
-          </div>
-
-          <div className="bg-light rounded-md shadow-md p-md">
-            <h3 className="text-primary mb-sm">Coordonnées</h3>
-            <p>
-              📍 Dakar, Sénégal <br />
-              📞 +221 77 000 00 00 <br />
-              ✉️ contact@amtel-technologie.com
-            </p>
-          </div>
-        </aside>
+        <Aside />
       </section>
     </div>
   );

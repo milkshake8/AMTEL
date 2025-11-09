@@ -22,7 +22,7 @@ export default function ActivitiesCard() {
                         <p>Achat et approvisionnement certifiés : parc informatique, fibre optique, solutions énergétiques, électroménager pro. Livraison & installation.</p>
                     </div>
                     <div className="card-footer text-center">
-                        <NavLink to="/services"><button className="btn btn-secondary btn-lg">Details <i className="fa-solid fa-arrow-right"></i></button></NavLink>
+                        <NavLink to="/services/equipementier"><button className="btn btn-secondary btn-lg">Details <i className="fa-solid fa-arrow-right"></i></button></NavLink>
                     </div>
                 </div>
 
@@ -35,7 +35,7 @@ export default function ActivitiesCard() {
                         <p>Intégration IT : audit, architecture, déploiement réseaux, serveurs, virtualisation, cybersécurité, cloud, logiciels métiers. <br /><br /></p>
                     </div>
                     <div className="card-footer text-center">
-                        <NavLink to="/services"><button className="btn btn-secondary btn-lg">Details <i className="fa-solid fa-arrow-right"></i></button></NavLink>
+                        <NavLink to="/services/integration-systemes"><button className="btn btn-secondary btn-lg">Details <i className="fa-solid fa-arrow-right"></i></button></NavLink>
                     </div>
                 </div>
 
@@ -48,7 +48,7 @@ export default function ActivitiesCard() {
                         <p>Sécurisez vos sites : caméras IP, NVR, alarmes, contrôle d’accès, interphonie. Étude, pose, maintenance. <br /><br /></p>
                     </div>
                     <div className="card-footer text-center">
-                        <NavLink to="/services"><button className="btn btn-secondary btn-lg">Details <i className="fa-solid fa-arrow-right"></i></button></NavLink>
+                        <NavLink to="/services/securite-domotique"><button className="btn btn-secondary btn-lg">Details <i className="fa-solid fa-arrow-right"></i></button></NavLink>
                     </div>
                 </div>
 
@@ -61,7 +61,7 @@ export default function ActivitiesCard() {
                         <p>Domotique : automatisation des éclairages, gestion du confort thermique, contrôle d’accès, vidéosurveillance, alarmes connectées, pilotage à distance et intégration intelligente des équipements.</p>
                     </div>
                     <div className="card-footer text-center">
-                        <NavLink to="/services"><button className="btn btn-secondary btn-lg">Details <i className="fa-solid fa-arrow-right"></i></button></NavLink>
+                        <NavLink to="/services/securite-domotique"><button className="btn btn-secondary btn-lg">Details <i className="fa-solid fa-arrow-right"></i></button></NavLink>
                     </div>
                 </div>
 
@@ -74,7 +74,7 @@ export default function ActivitiesCard() {
                         <p>Solutions énergétiques : dimensionnement PV, onduleurs, batteries, hybrides, groupes électrogènes, monitoring & maintenance. <br /><br /><br /></p>
                     </div>
                     <div className="card-footer text-center">
-                        <NavLink to="/services"><button className="btn btn-secondary btn-lg">Details <i className="fa-solid fa-arrow-right"></i></button></NavLink>
+                        <NavLink to="/services/energie"><button className="btn btn-secondary btn-lg">Details <i className="fa-solid fa-arrow-right"></i></button></NavLink>
                     </div>
                 </div>
                 
@@ -87,7 +87,7 @@ export default function ActivitiesCard() {
                         <p>Formations : accompagnement technique et pratique sur les solutions informatiques, systèmes de sécurité, énergies renouvelables et domotique, avec transfert de compétences et certification à la clé.</p>
                     </div>
                     <div className="card-footer text-center">
-                        <NavLink to="/services"><button className="btn btn-secondary btn-lg">Details <i className="fa-solid fa-arrow-right"></i></button></NavLink>
+                        <NavLink to="/services/formations"><button className="btn btn-secondary btn-lg">Details <i className="fa-solid fa-arrow-right"></i></button></NavLink>
                     </div>
                 </div>
 

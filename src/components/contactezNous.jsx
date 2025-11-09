@@ -41,7 +41,7 @@ const ContactezNous = () => {
         </p>
 
         {/* --- Bouton CTA --- */}
-        <NavLink to="/contact"> <button
+        <NavLink to="/contact#contact"> <button
           className="bg-light text-secondary rounded-md p-md shadow-md"
           style={{
             fontWeight: "600",

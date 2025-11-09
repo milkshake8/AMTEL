@@ -37,26 +37,29 @@ const Footer = () => {
           <h3 className="text-secondary mb-sm">Nos activités</h3>
           <ul style={{ lineHeight: "1.8" }}>
             <li>
-              <NavLink className="links" to="/services">
+              <NavLink className="links" to="/services/equipementier#service">
                 <i className="fa-solid fa-arrow-right"></i> Fourniture d’équipements
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services" className="links">
+              <NavLink to="/services/integration-systemes#service" className="links">
                 <i className="fa-solid fa-arrow-right"></i> Solutions informatiques
               </NavLink>
             </li>
             <li>
-              <NavLink className="links" to="/services">
+              <NavLink className="links" to="/services/securite-domotique#service">
                 <i className="fa-solid fa-arrow-right"></i> Sécurité et Domotique
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services" className="links">
+              <NavLink to="/services/energie#service" className="links">
                 <i className="fa-solid fa-arrow-right"></i> Energie
               </NavLink>
             </li>
             <li>
+              <NavLink to="/services/formations#service" className="links">
+                <i className="fa-solid fa-arrow-right"></i> Formations
+              </NavLink>
             </li>
           </ul>
         </div>

@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet-async";
 
 export const Home = () => {
     return (
-        <>
+        <div>
         <Helmet>
             <title>AMTEL technologies — Fourniture d'équipements, IT, Sécurité, Énergie à Dakar</title>
             <meta name="description" content="Découvrez nos solutions en informatique, sécurité, domotique et énergie solaire à Dakar. Installation et support professionnel." />
@@ -21,12 +21,12 @@ export const Home = () => {
             <meta property="og:url" content="https://amtel.sn/" />
       </Helmet>
 
-            <Activites />
+            <Activites/>
             <Apropos />
             <Valeurs />
             <ActivitiesCard />
             <NosReferences />
             <ContactezNous />
-        </>
+        </div>
     );
 }

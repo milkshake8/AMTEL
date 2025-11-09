@@ -34,6 +34,13 @@
   margin: 20px 0;
 }
 
+.separateur2 {
+  height: 1px;
+  max-width: 580px;
+  background-color: var(--color-primary);
+  margin: -13px 0 20px 0;
+}
+
 .valeurs{
   padding-left: 30px;
   padding-right: 30px;
@@ -92,6 +99,55 @@
     transform: translateX(-50%);
   }
 }
+
+.about-banner {
+  width: 100%;
+  min-height: 320px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+}
+
+.about-banner__overlay {
+  margin-top: 10px;
+  width: 100%;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-banner__overlay h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin: 0;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-main {
+  flex: 1 1 75%;
+  min-width: 300px;
+}
+
+.about-block {
+  background: #fff;
+  border-radius: var(--radius-md, 12px);
+  box-shadow: 0 15px 25px rgba(15, 23, 42, 0.08);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
 .contact-fade {
   animation: fadeInUp 0.8s ease forwards;
   opacity: 0;
@@ -104,5 +160,52 @@
     transform: translateY(0);
   }
 }
+/* Sticky sidebar for contact page */
 
+.contact-aside {
+  flex: 0 0 20%;
+  min-width: 250px;
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+  margin: 0 auto;
+}
 
+@media (max-width: 768px) {
+  .contact-aside {
+    display: none; /* or width: 100%; adjust to the behavior you need */
+  }
+
+  .about-banner,
+  .about-banner__overlay {
+    min-height: 220px;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+}
+.services-intro {
+  text-align: center;
+  padding: 80px 20px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.services-intro h2 {
+  color: #132440;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.services-intro p {
+  color: #16476A;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.services-intro strong {
+  color: #BF092F;
+}
