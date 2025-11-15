@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block build artifacts and configuration directories that are not part of the public site
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /vite.config.*
+Disallow: /package.json
+Disallow: /package-lock.json
+
+Sitemap: https://amtel.sn/sitemap.xml

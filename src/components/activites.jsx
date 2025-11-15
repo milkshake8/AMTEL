@@ -119,6 +119,7 @@ const Activites = () => {
           <img
             src={slides[current].img}
             alt={slides[current].title}
+            loading="lazy"
             style={{
               width: "100%",
               height: "400px",

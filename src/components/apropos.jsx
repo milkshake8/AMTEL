@@ -6,7 +6,7 @@ export default function Apropos () {
         <>
          <div className="container flex flex-between bg-tertiary" style={{width: "100%", maxWidth: "1360px", marginTop: "-32px", padding: "64px"}}>
             <div>
-            <img src={apropos} alt="A propos du groupe AMTEL technologies" style={{
+            <img src={apropos} alt="A propos du groupe AMTEL technologies" loading="lazy" style={{
               width: "100%",
               height: "400px",
               objectFit: "cover",

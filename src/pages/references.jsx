@@ -51,12 +51,15 @@ const References = () => {
   return (
     <div className="about-page">
       <Helmet>
-        <title>Nos references - Amtel Technologies</title>
-        <meta
-          name="description"
-          content="Parcourez nos references et une selection de projets illustres par Amtel Technologies."
-        />
-        <link rel="canonical" href="https://amtel.sn/references" />
+          <title>Nos references - Amtel Technologies</title>
+          <meta name="description" content="Parcourez nos references et une selection de projets illustres par Amtel Technologies." />
+          <link rel="canonical" href="https://amtel.sn/references" />
+          <meta property="og:title" content="References clients Amtel Technologies" />
+          <meta property="og:description" content="Partenaires et realisations phares d'Amtel Technologie." />
+          <meta property="og:url" content="https://amtel.sn/references" />
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="Amtel Technologie" />
+          <meta property="og:image" content="https://amtel.sn/logo-amtel.svg" />
       </Helmet>
 
       <section
@@ -103,6 +106,7 @@ const References = () => {
                     src={ref.logo}
                     alt={ref.name}
                     title={ref.name}
+                    loading="lazy"
                     style={{ maxHeight: "70px", objectFit: "contain" }}
                   />
                   <figcaption style={{ marginTop: "0.5rem", fontSize: "0.9rem" }}>
@@ -151,6 +155,7 @@ const References = () => {
                     src={item.image}
                     alt={item.title}
                     title={item.title}
+                    loading="lazy"
                     style={{ width: "100%", height: "160px", objectFit: "cover" }}
                   />
                   <span

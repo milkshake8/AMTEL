@@ -45,12 +45,15 @@ const IntegrationInformatique = () => {
   return (
     <div className="about-page">
       <Helmet>
-        <title>Integration informatique - Amtel Technologies</title>
-        <meta
-          name="description"
-          content="Conception, integration et maintenance d'infrastructures informatiques sur mesure par Amtel Technologies."
-        />
-        <link rel="canonical" href="https://amtel.sn/services/integration-informatique" />
+          <title>Integration informatique - Amtel Technologies</title>
+          <meta name="description" content="Conception, integration et maintenance d'infrastructures informatiques sur mesure par Amtel Technologies." />
+          <link rel="canonical" href="https://amtel.sn/services/integration-systemes" />
+          <meta property="og:title" content="Integration informatique par Amtel Technologies" />
+          <meta property="og:description" content="Architecture reseaux, serveurs, cloud et support par Amtel Technologie." />
+          <meta property="og:url" content="https://amtel.sn/services/integration-systemes" />
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="Amtel Technologie" />
+          <meta property="og:image" content="https://amtel.sn/logo-amtel.svg" />
       </Helmet>
       <section className="about-banner" style={{ backgroundImage: `url(${aboutBanner})`, marginTop: "6px" }}>
         <div className="about-banner__overlay">

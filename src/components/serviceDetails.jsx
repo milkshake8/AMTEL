@@ -9,7 +9,7 @@ const ActivitiesDetails = ({service}) => {
                     <h2>{service.title}</h2>
                  </div>
                 <div>
-                    <img id="service" src={service.img} alt={service.imgDescription} style={{borderRadius:"var(--radius-md)", marginBottom:"20px"}} />
+                    <img id="service" src={service.img} alt={service.imgDescription} loading="lazy" style={{borderRadius:"var(--radius-md)", marginBottom:"20px"}} />
                 </div>
                 <p dangerouslySetInnerHTML={{ __html: service.description }} />
                 <div>

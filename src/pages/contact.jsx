@@ -51,14 +51,15 @@ const Contact = () => {
     <div>
 
         <Helmet>
-            <title>Contact & Devis — Amtel Technologies — Fourniture, IT, Sécurité, Énergie à Dakar</title>
-            <meta name="description" content="Expliquez-nous votre besoin. Réponse sous 24h ouvrées." />
-            <link rel="canonical" href="https://amtel.sn/" />
-
-            {/* Optionnel : SEO avancé */}
-            <meta property="og:title" content="Entreprise XYZ — Solutions technologiques à Dakar" />
-            <meta property="og:description" content="Intégrateur à Dakar : équipements, IT, sécurité & solaire." />
-            <meta property="og:url" content="https://amtel.sn/" />
+            <title>Contact et devis - Amtel Technologies</title>
+            <meta name="description" content="Expliquez-nous votre besoin. Reponse sous 24h ouvrees." />
+            <link rel="canonical" href="https://amtel.sn/contact" />
+            <meta property="og:title" content="Contacter Amtel Technologies" />
+            <meta property="og:description" content="Telephone, email et formulaire pour joindre Amtel Technologie a Dakar." />
+            <meta property="og:url" content="https://amtel.sn/contact" />
+            <meta property="og:type" content="website" />
+            <meta property="og:site_name" content="Amtel Technologie" />
+            <meta property="og:image" content="https://amtel.sn/logo-amtel.svg" />
         </Helmet>
 
       {/* === SECTION HEADER === */}

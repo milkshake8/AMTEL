@@ -11,15 +11,16 @@ export const Home = () => {
     return (
         <div>
         <Helmet>
-            <title>AMTEL technologies — Fourniture d'équipements, IT, Sécurité, Énergie à Dakar</title>
-            <meta name="description" content="Découvrez nos solutions en informatique, sécurité, domotique et énergie solaire à Dakar. Installation et support professionnel." />
+            <title>AMTEL Technologies - Fourniture d'equipements, IT, securite, energie a Dakar</title>
+            <meta name="description" content="Decouvrez nos solutions en informatique, securite, domotique et energie solaire a Dakar. Installation et support professionnel." />
             <link rel="canonical" href="https://amtel.sn/" />
-
-            {/* Optionnel : SEO avancé */}
-            <meta property="og:title" content="Amtel Technologies — Solutions technologiques à Dakar" />
-            <meta property="og:description" content="Intégrateur à Dakar : équipements, IT, sécurité & solaire." />
+            <meta property="og:title" content="Amtel Technologies - Solutions technologiques a Dakar" />
+            <meta property="og:description" content="Integrateur a Dakar : equipements, IT, securite et solaire." />
             <meta property="og:url" content="https://amtel.sn/" />
-      </Helmet>
+            <meta property="og:type" content="website" />
+            <meta property="og:site_name" content="Amtel Technologie" />
+            <meta property="og:image" content="https://amtel.sn/logo-amtel.svg" />
+        </Helmet>
 
             <Activites/>
             <Apropos />

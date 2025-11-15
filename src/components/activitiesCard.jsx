@@ -16,7 +16,7 @@ export default function ActivitiesCard() {
                 <div className="card">
                     <div className="card-header">Equipementier</div>
                     <div>
-                        <img src={fournitures} alt="Image de la carte" style={{width: "100%", height: "200px", objectFit: "cover", borderRadius: "inherit"}} />
+                        <img src={fournitures} alt="Image de la carte" loading="lazy" style={{width: "100%", height: "200px", objectFit: "cover", borderRadius: "inherit"}} />
                     </div>
                     <div className="card-body">
                         <p>Achat et approvisionnement certifiés : parc informatique, fibre optique, solutions énergétiques, électroménager pro. Livraison & installation.</p>
@@ -29,7 +29,7 @@ export default function ActivitiesCard() {
                 <div className="card">
                     <div className="card-header">Intégration systèmes</div>
                     <div>
-                        <img src={systemes} alt="Image de la carte" style={{width: "100%", height: "200px", objectFit: "cover", borderRadius: "inherit"}} />
+                        <img src={systemes} alt="Image de la carte" loading="lazy" style={{width: "100%", height: "200px", objectFit: "cover", borderRadius: "inherit"}} />
                     </div>
                     <div className="card-body">
                         <p>Intégration IT : audit, architecture, déploiement réseaux, serveurs, virtualisation, cybersécurité, cloud, logiciels métiers. <br /><br /></p>
@@ -42,7 +42,7 @@ export default function ActivitiesCard() {
                 <div className="card">
                     <div className="card-header">Sécurité</div>
                     <div>
-                        <img src={camera2} alt="Image de la carte" style={{width: "100%", height: "200px", objectFit: "cover", borderRadius: "inherit"}} />
+                        <img src={camera2} alt="Image de la carte" loading="lazy" style={{width: "100%", height: "200px", objectFit: "cover", borderRadius: "inherit"}} />
                     </div>
                     <div className="card-body">
                         <p>Sécurisez vos sites : caméras IP, NVR, alarmes, contrôle d’accès, interphonie. Étude, pose, maintenance. <br /><br /></p>
@@ -55,7 +55,7 @@ export default function ActivitiesCard() {
                 <div className="card">
                     <div className="card-header">Domotique</div>
                     <div>
-                        <img src={domotique2} alt="Image de la carte" style={{width: "100%", height: "200px", objectFit: "cover", borderRadius: "inherit"}} />
+                        <img src={domotique2} alt="Image de la carte" loading="lazy" style={{width: "100%", height: "200px", objectFit: "cover", borderRadius: "inherit"}} />
                     </div>
                     <div className="card-body">
                         <p>Domotique : automatisation des éclairages, gestion du confort thermique, contrôle d’accès, vidéosurveillance, alarmes connectées, pilotage à distance et intégration intelligente des équipements.</p>
@@ -68,7 +68,7 @@ export default function ActivitiesCard() {
                 <div className="card">
                     <div className="card-header">Energie</div>
                     <div>
-                        <img src={panneaux2} alt="Image de la carte" style={{width: "100%", height: "200px", objectFit: "cover", borderRadius: "inherit"}} />
+                        <img src={panneaux2} alt="Image de la carte" loading="lazy" style={{width: "100%", height: "200px", objectFit: "cover", borderRadius: "inherit"}} />
                     </div>
                     <div className="card-body">
                         <p>Solutions énergétiques : dimensionnement PV, onduleurs, batteries, hybrides, groupes électrogènes, monitoring & maintenance. <br /><br /><br /></p>
@@ -81,7 +81,7 @@ export default function ActivitiesCard() {
                 <div className="card">
                     <div className="card-header">Formations</div>
                     <div>
-                        <img src={formations} alt="Image de la carte" style={{width: "100%", height: "200px", objectFit: "cover", borderRadius: "inherit"}} />
+                        <img src={formations} alt="Image de la carte" loading="lazy" style={{width: "100%", height: "200px", objectFit: "cover", borderRadius: "inherit"}} />
                     </div>
                     <div className="card-body">
                         <p>Formations : accompagnement technique et pratique sur les solutions informatiques, systèmes de sécurité, énergies renouvelables et domotique, avec transfert de compétences et certification à la clé.</p>

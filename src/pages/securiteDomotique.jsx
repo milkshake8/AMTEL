@@ -39,12 +39,15 @@ const SecuriteDomotique = () => {
   return (
     <div className="about-page">
       <Helmet>
-        <title>Securite et domotique - Amtel Technologies</title>
-        <meta
-          name="description"
-          content="Solutions de video-surveillance, alarmes, controle d'acces et domotique intelligente deployees par Amtel Technologies."
-        />
-        <link rel="canonical" href="https://amtel.sn/services/securite-domotique" />
+          <title>Securite et domotique - Amtel Technologies</title>
+          <meta name="description" content="Solutions de videosurveillance, alarmes, controle d'acces et domotique intelligente deployees par Amtel Technologies." />
+          <link rel="canonical" href="https://amtel.sn/services/securite-domotique" />
+          <meta property="og:title" content="Solutions securite et domotique Amtel Technologies" />
+          <meta property="og:description" content="Videosurveillance, alarmes et controle d'acces deployes au Senegal." />
+          <meta property="og:url" content="https://amtel.sn/services/securite-domotique" />
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="Amtel Technologie" />
+          <meta property="og:image" content="https://amtel.sn/logo-amtel.svg" />
       </Helmet>
       <section className="about-banner" style={{ backgroundImage: `url(${aboutBanner})`, marginTop: "6px" }}>
         <div className="about-banner__overlay">

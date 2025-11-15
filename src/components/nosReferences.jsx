@@ -35,6 +35,7 @@ const NosReferences = () => {
                   src={ref.logo}
                   alt={ref.name}
                   title={ref.name}
+                  loading="lazy"
                   style={{ height: "60px", objectFit: "contain" }}
                 />
               </div>

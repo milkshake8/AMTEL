@@ -8,12 +8,15 @@ const Services = () => {
   return (
     <div className="about-page">
       <Helmet>
-        <title>Services — Équipements, IT, Sécurité, Énergie — Dakar</title>
-        <meta
-          name="description"
-          content="Découvrez nos solutions en informatique, sécurité, domotique et énergie solaire à Dakar. Installation et support professionnel."
-        />
-        <link rel="canonical" href="https://amtel.sn/about" />
+          <title>Services - Equipements, IT, securite, energie a Dakar</title>
+          <meta name="description" content="Vue d'ensemble des services Amtel Technologies: equipements, integration systemes, securite, domotique et energie." />
+          <link rel="canonical" href="https://amtel.sn/services" />
+          <meta property="og:title" content="Services Amtel Technologies" />
+          <meta property="og:description" content="Solutions IT, securite, domotique et energie offertes par Amtel Technologie a Dakar." />
+          <meta property="og:url" content="https://amtel.sn/services" />
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="Amtel Technologie" />
+          <meta property="og:image" content="https://amtel.sn/logo-amtel.svg" />
       </Helmet>
 
       <section

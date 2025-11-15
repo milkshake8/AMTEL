@@ -40,12 +40,15 @@ const Energie = () => {
   return (
     <div className="about-page">
       <Helmet>
-        <title>Energie - Amtel Technologies</title>
-        <meta
-          name="description"
-          content="Solutions energetiques solaires et hybrides cle en main signees Amtel Technologies."
-        />
-        <link rel="canonical" href="https://amtel.sn/services/energie" />
+          <title>Energie - Amtel Technologies</title>
+          <meta name="description" content="Solutions energetiques solaires et hybrides cle en main signees Amtel Technologies." />
+          <link rel="canonical" href="https://amtel.sn/services/energie" />
+          <meta property="og:title" content="Solutions energetiques Amtel Technologies" />
+          <meta property="og:description" content="Centrales solaires, hybrides et stockage deployes au Senegal." />
+          <meta property="og:url" content="https://amtel.sn/services/energie" />
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="Amtel Technologie" />
+          <meta property="og:image" content="https://amtel.sn/logo-amtel.svg" />
       </Helmet>
       <section className="about-banner" style={{ backgroundImage: `url(${aboutBanner})`, marginTop: "6px" }}>
         <div className="about-banner__overlay">

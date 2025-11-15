@@ -7,12 +7,18 @@ const AboutUs = () => {
   return (
     <div className="about-page">
       <Helmet>
-        <title>About Us — Amtel Technologies</title>
+        <title>A propos - Amtel Technologies</title>
         <meta
           name="description"
-          content="Découvrez la mission, l’approche et l’équipe d’Amtel Technologies, intégrateur de solutions IT, sécurité et énergie."
+          content="Decouvrez la mission, l'approche et l'equipe d'Amtel Technologies, integrateur de solutions IT, securite et energie."
         />
-        <link rel="canonical" href="https://amtel.sn/about" />
+        <link rel="canonical" href="https://amtel.sn/a-propos" />
+        <meta property="og:title" content="A propos d'Amtel Technologies" />
+        <meta property="og:description" content="Histoire, mission et valeurs d'Amtel Technologie au Senegal." />
+        <meta property="og:url" content="https://amtel.sn/a-propos" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Amtel Technologie" />
+        <meta property="og:image" content="https://amtel.sn/logo-amtel.svg" />
       </Helmet>
 
       <section
