@@ -1,4 +1,4 @@
-import contacts from "../css/css/assets/images/contacts.png";
+import contacts from "../css/css/assets/images/contacts.webp";
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Aside from "../components/aside";

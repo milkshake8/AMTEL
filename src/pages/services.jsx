@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import NosReferences from "../components/nosReferences";
 import Aside from '../components/aside.jsx';
 import ActivitiesCard from '../components/activitiesCard.jsx';
-import aboutBanner from "../css/css/assets/images/bureau3.jpg";
+import aboutBanner from "../css/css/assets/images/bureau3.webp";
 
 const Services = () => {
   return (

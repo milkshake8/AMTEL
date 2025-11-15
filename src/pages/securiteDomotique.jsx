@@ -1,7 +1,7 @@
 ﻿import { Helmet } from "react-helmet-async";
 import ActivitiesDetails from "../components/serviceDetails";
-import aboutBanner from "../css/css/assets/images/bureau3.jpg";
-import securiteVisuel from "../css/css/assets/images/camera-surveillance2.jpg";
+import aboutBanner from "../css/css/assets/images/bureau3.webp";
+import securiteVisuel from "../css/css/assets/images/camera-surveillance2.webp";
 import Aside from "../components/aside.jsx";
 
 const service = {

@@ -1,10 +1,10 @@
 import {NavLink} from "react-router-dom";
-import camera2 from "../css/css/assets/images/camera-surveillance2.jpg";
-import domotique2 from "../css/css/assets/images/domotique2.png";
-import panneaux2 from "../css/css/assets/images/panneau-solaire2.jpeg";
-import fournitures from "../css/css/assets/images/fournitures2.jpg";
-import systemes from "../css/css/assets/images/system.png";
-import formations from "../css/css/assets/images/Formations.png";
+import camera2 from "../css/css/assets/images/camera-surveillance2.webp";
+import domotique2 from "../css/css/assets/images/domotique2.webp";
+import panneaux2 from "../css/css/assets/images/panneau-solaire2.webp";
+import fournitures from "../css/css/assets/images/fournitures2.webp";
+import systemes from "../css/css/assets/images/system.webp";
+import formations from "../css/css/assets/images/Formations.webp";
 
 export default function ActivitiesCard() {
     return (

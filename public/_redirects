@@ -1,0 +1,15 @@
+# ------------------------------------------------------
+# 1 Force HTTPS (HTTP → HTTPS)
+# ------------------------------------------------------
+http://amtel.sn/*      https://amtel.sn/:splat      301!
+http://www.amtel.sn/*  https://amtel.sn/:splat      301!
+
+# ------------------------------------------------------
+# 2 Redirige WWW → sans WWW (version canonique)
+# ------------------------------------------------------
+https://www.amtel.sn/*   https://amtel.sn/:splat    301!
+
+# ------------------------------------------------------
+# 3 Support SPA React (redirige toutes les routes → index.html)
+# ------------------------------------------------------
+/*    /index.html    200

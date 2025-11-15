@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMedal } from '@fortawesome/free-solid-svg-icons'
-import camera from "../css/css/assets/images/camera-surveillance1.jpg";
-import domotique from "../css/css/assets/images/domotique1.png";
-import panneaux from "../css/css/assets/images/panneaux-solaires.jpeg";
-import fournitures from "../css/css/assets/images/equipements.png";
-import systemes from "../css/css/assets/images/system.png";
+import camera from "../css/css/assets/images/camera-surveillance1.webp";
+import domotique from "../css/css/assets/images/domotique1.webp";
+import panneaux from "../css/css/assets/images/panneaux-solaires.webp";
+import fournitures from "../css/css/assets/images/equipements.webp";
+import systemes from "../css/css/assets/images/system.webp";
 
 
 

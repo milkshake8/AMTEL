@@ -1,26 +1,26 @@
 ﻿import { Helmet } from "react-helmet-async";
 import Aside from '../components/aside.jsx';
 import ContactezNous from "../components/contactezNous.jsx";
-import aboutBanner from "../css/css/assets/images/bureau2.jpg";
-import bis from "../css/css/assets/logos/bis.png";
-import infractive from "../css/css/assets/logos/infractive.png";
+import aboutBanner from "../css/css/assets/images/bureau2.webp";
+import bis from "../css/css/assets/logos/bis.webp";
+import infractive from "../css/css/assets/logos/infractive.webp";
 import sonatel from "../css/css/assets/logos/logo-sonatel.svg";
-import mtoa from "../css/css/assets/logos/MTOA.jpg";
-import onu from "../css/css/assets/logos/ONUDC.png";
-import orange from "../css/css/assets/logos/orange-logo.png";
-import seeco from "../css/css/assets/logos/SEECO.png";
-import solarcom from "../css/css/assets/logos/SOLARCOM.jpg";
-import telenco from "../css/css/assets/logos/telenco.jpg";
-import formationAmtel from "../css/css/assets/images/galerie/formation-amtel-technologie-dakar.jpeg";
-import installationSolaires from "../css/css/assets/images/galerie/projet-installation-panneaux-solaires-amtel-technologie-dakar.jpeg";
-import maintenanceBts from "../css/css/assets/images/galerie/projet-maintenance-antennes-radio-BTS-amtel-technologie-dakar.jpeg";
-import projetMtoa from "../css/css/assets/images/galerie/projet-mtoa-amtel-technologie-dakar.jpeg";
-import maintenanceBts2 from "../css/css/assets/images/galerie/projet2-maintenance-antennes-radio-BTS-amtel-technologie-dakar.jpeg";
-import maintenanceBts3 from "../css/css/assets/images/galerie/projet3-maintenance-antennes-radio-BTS-amtel-technologie-dakar.jpeg";
-import maintenanceBts4 from "../css/css/assets/images/galerie/projet4-maintenance-antennes-radio-BTS-amtel-technologie-dakar.jpeg";
-import stockEquipements from "../css/css/assets/images/galerie/stock-equipements.jpeg";
-import technicienIntervention from "../css/css/assets/images/galerie/Technicien-dintervention-projet-maintenance-antennes-radio-BTS-amtel-technologie-dakar.jpeg";
-import technicienIntervention2 from "../css/css/assets/images/galerie/Technicien-dintervention2-projet-maintenance-antennes-radio-BTS-amtel-technologie-dakar.jpeg";
+import mtoa from "../css/css/assets/logos/MTOA.webp";
+import onu from "../css/css/assets/logos/ONUDC.webp";
+import orange from "../css/css/assets/logos/orange-logo.webp";
+import seeco from "../css/css/assets/logos/SEECO.webp";
+import solarcom from "../css/css/assets/logos/SOLARCOM.webp";
+import telenco from "../css/css/assets/logos/telenco.webp";
+import formationAmtel from "../css/css/assets/images/galerie/formation-amtel-technologie-dakar.webp";
+import installationSolaires from "../css/css/assets/images/galerie/projet-installation-panneaux-solaires-amtel-technologie-dakar.webp";
+import maintenanceBts from "../css/css/assets/images/galerie/projet-maintenance-antennes-radio-BTS-amtel-technologie-dakar.webp";
+import projetMtoa from "../css/css/assets/images/galerie/projet-mtoa-amtel-technologie-dakar.webp";
+import maintenanceBts2 from "../css/css/assets/images/galerie/projet2-maintenance-antennes-radio-BTS-amtel-technologie-dakar.webp";
+import maintenanceBts3 from "../css/css/assets/images/galerie/projet3-maintenance-antennes-radio-BTS-amtel-technologie-dakar.webp";
+import maintenanceBts4 from "../css/css/assets/images/galerie/projet4-maintenance-antennes-radio-BTS-amtel-technologie-dakar.webp";
+import stockEquipements from "../css/css/assets/images/galerie/stock-equipements.webp";
+import technicienIntervention from "../css/css/assets/images/galerie/Technicien-dintervention-projet-maintenance-antennes-radio-BTS-amtel-technologie-dakar.webp";
+import technicienIntervention2 from "../css/css/assets/images/galerie/Technicien-dintervention2-projet-maintenance-antennes-radio-BTS-amtel-technologie-dakar.webp";
 
 const referenceLogos = [
   { id: 1, logo: bis, name: "Banque Islamique du Senegal" },
@@ -138,7 +138,6 @@ const References = () => {
                   key={item.id}
                   href={item.image}
                   className="gallery-item"
-                  target="_blank"
                   rel="noopener noreferrer"
                   style={{
                     display: "flex",

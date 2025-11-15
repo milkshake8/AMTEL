@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import apropos from '../css/css/assets/images/apropos.png';
+import apropos from '../css/css/assets/images/apropos.webp';
 
 export default function Apropos () {
     return (

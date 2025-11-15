@@ -1,12 +1,12 @@
-import bis from "../css/css/assets/logos/bis.png";
-import infractive from "../css/css/assets/logos/infractive.png";
+import bis from "../css/css/assets/logos/bis.webp";
+import infractive from "../css/css/assets/logos/infractive.webp";
 import sonatel from "../css/css/assets/logos/logo-sonatel.svg";
-import mtoa from "../css/css/assets/logos/MTOA.jpg";
-import onu from "../css/css/assets/logos/ONUDC.png";
-import orange from "../css/css/assets/logos/orange-logo.png";
-import seeco from "../css/css/assets/logos/SEECO.png";
-import solarcom from "../css/css/assets/logos/SOLARCOM.jpg";
-import telenco from "../css/css/assets/logos/telenco.jpg";
+import mtoa from "../css/css/assets/logos/MTOA.webp";
+import onu from "../css/css/assets/logos/ONUDC.webp";
+import orange from "../css/css/assets/logos/orange-logo.webp";
+import seeco from "../css/css/assets/logos/SEECO.webp";
+import solarcom from "../css/css/assets/logos/SOLARCOM.webp";
+import telenco from "../css/css/assets/logos/telenco.webp";
 
 const NosReferences = () => {
   const references = [
