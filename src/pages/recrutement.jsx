@@ -74,6 +74,7 @@ const Recrutement = () => {
               encType="multipart/form-data"
             >
               <input type="hidden" name="form-name" value="recruitment" />
+              <input type="hidden" name="redirect" value="/merci" />
               <p style={{ display: 'none' }}>
                 <label>
                   Ne pas remplir: <input name="bot-field" />
