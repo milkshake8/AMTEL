@@ -184,8 +184,11 @@ const AboutUs = () => {
                 Vous êtes <strong>jeune motive et dynamique?</strong><br />
                 Vous êtes prêt à <strong> faire valoir votre talent?</strong><br />
                 Rejoignez notre équipe grandissante et <strong> faites évoluer votre carrière!</strong><br />
-                Envoyez-nous votre CV et lettre de motivation  <NavLink to="/recrutement"> ici.</NavLink>
+                Envoyez-nous votre CV et lettre de motivation ici.
               </p>
+              <NavLink to="/recrutement" className="btn btn-primary">
+                Postuler ici
+              </NavLink>
             </article>
         </div>
 

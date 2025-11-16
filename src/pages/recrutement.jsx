@@ -1,90 +1,8 @@
-import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Aside from '../components/aside.jsx';
 import aboutBanner from '../css/css/assets/images/bureau.webp';
 
-const whatsappNumber = '221776198974';
-
 const Recrutement = () => {
-  const [formValues, setFormValues] = useState({
-    fullName: '',
-    email: '',
-    phone: '',
-    role: '',
-    message: '',
-  });
-  const [cvFile, setCvFile] = useState(null);
-  const [submitting, setSubmitting] = useState(false);
-
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormValues((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleFileChange = (event) => {
-    const file = event.target.files?.[0];
-    setCvFile(file || null);
-  };
-
-  const openWhatsAppWithText = (text) => {
-    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-      text
-    )}`;
-    window.open(url, '_blank', 'noopener,noreferrer');
-  };
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    if (!cvFile) {
-      alert('Merci de joindre votre CV avant de soumettre votre candidature.');
-      return;
-    }
-
-    setSubmitting(true);
-    const baseMessage = [
-      'Nouvelle candidature via le site AMTEL :',
-      '',
-      `Nom complet : ${formValues.fullName}`,
-      `Email : ${formValues.email}`,
-      `Telephone : ${formValues.phone}`,
-      `Poste vise : ${formValues.role || 'Non precise'}`,
-      '',
-      'Message :',
-      formValues.message || 'Non renseigne',
-    ].join('\n');
-
-    const cvSummary = `CV : ${cvFile.name} (${(cvFile.size / 1024).toFixed(
-      1
-    )} Ko)`;
-
-    const canShareFile =
-      typeof navigator !== 'undefined' &&
-      navigator.canShare &&
-      navigator.canShare({ files: [cvFile] });
-
-    if (canShareFile) {
-      try {
-        await navigator.share({
-          title: 'Candidature Amtel',
-          text: `${baseMessage}\n\n${cvSummary}`,
-          files: [cvFile],
-        });
-        setSubmitting(false);
-        return;
-      } catch (error) {
-        console.error('Partage natif indisponible', error);
-      }
-    }
-
-    openWhatsAppWithText(
-      `${baseMessage}\n\n${cvSummary}\nMerci de joindre ce fichier manuellement dans WhatsApp.`
-    );
-    setSubmitting(false);
-    alert(
-      'WhatsApp est ouvert avec votre message. Merci de joindre votre CV directement dans la discussion.'
-    );
-  };
-
   return (
     <div className="about-page">
       <Helmet>
@@ -147,7 +65,21 @@ const Recrutement = () => {
           <article className="about-block">
             <h2 className="text-primary mb-sm">Deposez votre candidature</h2>
             <div className="separateur" style={{ width: '320px' }}></div>
-            <form className="recruitment-form" onSubmit={handleSubmit}>
+            <form
+              className="recruitment-form"
+              name="recruitment"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              encType="multipart/form-data"
+            >
+              <input type="hidden" name="form-name" value="recruitment" />
+              <p style={{ display: 'none' }}>
+                <label>
+                  Ne pas remplir: <input name="bot-field" />
+                </label>
+              </p>
+
               <div className="form-grid">
                 <div className="form-group">
                   <label htmlFor="fullName">Nom complet *</label>
@@ -156,8 +88,6 @@ const Recrutement = () => {
                     name="fullName"
                     type="text"
                     placeholder="Ex : Mariama Ndiaye"
-                    value={formValues.fullName}
-                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -168,8 +98,6 @@ const Recrutement = () => {
                     name="email"
                     type="email"
                     placeholder="vous@exemple.com"
-                    value={formValues.email}
-                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -180,20 +108,12 @@ const Recrutement = () => {
                     name="phone"
                     type="tel"
                     placeholder="+221 77 000 00 00"
-                    value={formValues.phone}
-                    onChange={handleChange}
                     required
                   />
                 </div>
                 <div className="form-group">
                   <label htmlFor="role">Poste souhaite *</label>
-                  <select
-                    id="role"
-                    name="role"
-                    value={formValues.role}
-                    onChange={handleChange}
-                    required
-                  >
+                  <select id="role" name="role" required>
                     <option value="">Selectionner une option</option>
                     <option value="Ingenieur Systemes">Ingenieur systemes</option>
                     <option value="Technicien Energie">
@@ -214,11 +134,10 @@ const Recrutement = () => {
                   name="cv"
                   type="file"
                   accept=".pdf,.doc,.docx"
-                  onChange={handleFileChange}
                   required
                 />
                 <small className="cv-hint">
-                  Le fichier sera encode et transmis avec votre message WhatsApp.
+                  Le fichier est envoye et stocke de maniere securisee via Netlify.
                 </small>
               </div>
 
@@ -229,18 +148,12 @@ const Recrutement = () => {
                   name="message"
                   rows="4"
                   placeholder="Dites-nous en plus sur votre projet professionnel..."
-                  value={formValues.message}
-                  onChange={handleChange}
                 ></textarea>
               </div>
 
               <div className="form-actions">
-                <button
-                  type="submit"
-                  className="btn btn-primary btn-lg"
-                  disabled={submitting}
-                >
-                  {submitting ? 'Preparation...' : 'Envoyer sur WhatsApp'}
+                <button type="submit" className="btn btn-primary btn-lg">
+                  Envoyer ma candidature
                 </button>
               </div>
             </form>
