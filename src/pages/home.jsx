@@ -4,6 +4,7 @@ import Valeurs from '../components/valeurs.jsx';
 import ActivitiesCard from '../components/activitiesCard.jsx';
 import NosReferences from '../components/nosReferences.jsx';
 import ContactezNous from '../components/contactezNous.jsx';
+import LandingPage from '../components/landingPage.jsx';
 import { Helmet } from "react-helmet-async";
 
 
@@ -11,7 +12,7 @@ export const Home = () => {
     return (
         <div>
         <Helmet>
-            <title>AMTEL Technologies - Fourniture d'equipements, IT, securite, energie a Dakar</title>
+            <title>AMTEL Technologie SARL - Fourniture d'equipements, IT, securite, energie a Dakar</title>
             <meta name="description" content="Decouvrez nos solutions en informatique, securite, domotique et energie solaire a Dakar. Installation et support professionnel." />
             <link rel="canonical" href="https://amtel.sn/" />
             <meta property="og:title" content="Amtel Technologies - Solutions technologiques a Dakar" />
@@ -22,6 +23,7 @@ export const Home = () => {
             <meta property="og:image" content="https://amtel.sn/logo-amtel.svg" />
         </Helmet>
 
+            <LandingPage />
             <Activites/>
             <Apropos />
             <Valeurs />

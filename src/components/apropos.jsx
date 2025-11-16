@@ -16,7 +16,7 @@ export default function Apropos () {
         </div>
             <div>
                 <h1 className='text-center' style={{color: "white"}}>Qui Sommes-Nous?</h1>
-                <p className='text-left' style={{width: "100%", maxWidth: "400px", color: "white"}}>Amtel Technologie SARL est une société de services innovante spécialisée dans la fourniture d’équipements, les solutions informatiques et l’intégration de systèmes, la sécurité et la domotique, ainsi que l’énergie photovoltaïque.
+                <p className='text-left' style={{width: "100%", maxWidth: "400px", color: "white"}}>Amtel Technologie SARL est une société de services innovante basée à Dakar et spécialisée dans la fourniture d’équipements, les solutions informatiques et l’intégration de systèmes, la sécurité et la domotique, ainsi que l’énergie photovoltaïque.
 Grâce à un savoir-faire éprouvé et des processus centrés sur la satisfaction client, l’entreprise accompagne professionnels et particuliers dans la modernisation de leurs infrastructures.
 Ses valeurs fondamentales — Respect, Intégrité et Engagement — guident chacune de ses actions pour offrir des solutions durables, performantes et adaptées aux besoins de chaque client.</p>
             <div>

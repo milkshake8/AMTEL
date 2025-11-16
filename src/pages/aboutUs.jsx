@@ -2,6 +2,8 @@ import { Helmet } from "react-helmet-async";
 import NosReferences from "../components/nosReferences";
 import Aside from '../components/aside.jsx';
 import aboutBanner from "../css/css/assets/images/bureau.webp";
+import ceoPortrait from "../css/css/assets/images/galerie/ceo-amtel.webp";
+import { NavLink } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -35,6 +37,12 @@ const AboutUs = () => {
           <article className="about-block">
               <h2 className="text-primary mb-sm">Mots du CEO</h2>
               <div className="separateur" style={{width:'216px'}}></div>
+              <img
+                src={ceoPortrait}
+                alt="CEO d'Amtel Technologie"
+                className="ceo-portrait"
+                loading="lazy"
+              />
               <p>
                 Animés par le désir d’apprendre et de grandir, nous avons suivi un parcours académique classique 
                 jusqu’à l’obtention de notre licence, avant de poursuivre nos études en école de commerce en France, au niveau Master.<br/>
@@ -119,6 +127,64 @@ const AboutUs = () => {
                 Pour nous, l’intégrité n’est pas une option&nbsp;: c’est une exigence.<br/>
                 C’est elle qui fonde la confiance que nos clients nous accordent 
                 et qui nous pousse à demeurer fidèles à nos principes, même face aux défis.
+              </p>
+            </article>
+
+            <article className="about-block">
+              <h2 className="text-primary mb-sm">FAQ</h2>
+              <div className="separateur" style={{ width: "86px" }}></div>
+              <div style={{ marginTop: "1rem", display: "flex", flexDirection: "column", gap: "1.25rem" }}>
+                <div>
+                  <p style={{ fontWeight: 600 }}>Q1 : Quels services propose AMTEL ?</p>
+                  <p>
+                    AMTEL fournit des solutions informatiques, domotiques, de securite electronique et d'energie solaire,
+                    adaptees aux besoins des particuliers comme des entreprises.
+                  </p>
+                </div>
+                <div>
+                  <p style={{ fontWeight: 600 }}>Q2 : Intervenez-vous dans tout le Senegal ?</p>
+                  <p>
+                    Oui. Basee a Dakar, AMTEL intervient partout au Senegal et peut accompagner des projets dans la sous-region.
+                  </p>
+                </div>
+                <div>
+                  <p style={{ fontWeight: 600 }}>Q3 : Proposez-vous un diagnostic ou un devis gratuit ?</p>
+                  <p>
+                    Oui, chaque projet commence par un diagnostic detaille et un devis gratuit.
+                  </p>
+                </div>
+                <div>
+                  <p style={{ fontWeight: 600 }}>Q4 : Que se passe-t-il en cas de panne ou probleme technique ?</p>
+                  <p>
+                    Nos equipes assurent un support rapide et peuvent intervenir sur site pour resoudre vos problemes dans les
+                    meilleurs delais.
+                  </p>
+                </div>
+                <div>
+                  <p style={{ fontWeight: 600 }}>Q5 : Installez-vous des systemes de securite pour les entreprises ?</p>
+                  <p>
+                    Oui. Nous installons des solutions de videosurveillance, controle d'acces, alarmes, systemes de gestion et
+                    dispositifs anti-intrusion.
+                  </p>
+                </div>
+                <div>
+                  <p style={{ fontWeight: 600 }}>Q6 : Offrez-vous une garantie sur vos installations ?</p>
+                  <p>
+                    Oui. Tous nos equipements et installations beneficient d'une garantie constructeur plus une garantie
+                    d'installation AMTEL.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article className="about-block">
+              <h2 className="text-primary mb-sm">Recrutement</h2>
+              <div className="separateur" style={{width:'193px'}}></div>
+              <p>
+                Vous êtes <strong>jeune motive et dynamique?</strong><br />
+                Vous êtes prêt à <strong> faire valoir votre talent?</strong><br />
+                Rejoignez notre équipe grandissante et <strong> faites évoluer votre carrière!</strong><br />
+                Envoyez-nous votre CV et lettre de motivation  <NavLink to="/recrutement"> ici.</NavLink>
               </p>
             </article>
         </div>

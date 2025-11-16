@@ -1,4 +1,5 @@
-﻿import { Helmet } from "react-helmet-async";
+﻿import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import Aside from '../components/aside.jsx';
 import ContactezNous from "../components/contactezNous.jsx";
 import aboutBanner from "../css/css/assets/images/bureau2.webp";
@@ -48,6 +49,41 @@ const galleryItems = [
 ];
 
 const References = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+  const isModalOpen = activeIndex !== null;
+
+  const openModal = (index) => setActiveIndex(index);
+  const closeModal = () => setActiveIndex(null);
+  const showNext = () => {
+    setActiveIndex((prev) =>
+      prev === null ? null : (prev + 1) % galleryItems.length
+    );
+  };
+  const showPrevious = () => {
+    setActiveIndex((prev) =>
+      prev === null ? null : (prev - 1 + galleryItems.length) % galleryItems.length
+    );
+  };
+
+  useEffect(() => {
+    if (!isModalOpen) return;
+    const handleKey = (event) => {
+      if (event.key === "Escape") {
+        closeModal();
+      } else if (event.key === "ArrowRight") {
+        setActiveIndex((prev) =>
+          prev === null ? null : (prev + 1) % galleryItems.length
+        );
+      } else if (event.key === "ArrowLeft") {
+        setActiveIndex((prev) =>
+          prev === null ? null : (prev - 1 + galleryItems.length) % galleryItems.length
+        );
+      }
+    };
+    document.addEventListener("keydown", handleKey);
+    return () => document.removeEventListener("keydown", handleKey);
+  }, [isModalOpen]);
+
   return (
     <div className="about-page">
       <Helmet>
@@ -133,12 +169,12 @@ const References = () => {
                 marginTop: "1.5rem",
               }}
             >
-              {galleryItems.map((item) => (
-                <a
+              {galleryItems.map((item, index) => (
+                <button
                   key={item.id}
-                  href={item.image}
+                  type="button"
                   className="gallery-item"
-                  rel="noopener noreferrer"
+                  onClick={() => openModal(index)}
                   style={{
                     display: "flex",
                     flexDirection: "column",
@@ -148,6 +184,9 @@ const References = () => {
                     overflow: "hidden",
                     boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)",
                     backgroundColor: "#fff",
+                    border: "none",
+                    cursor: "pointer",
+                    padding: 0,
                   }}
                 >
                   <img
@@ -167,7 +206,7 @@ const References = () => {
                   >
                     {item.title}
                   </span>
-                </a>
+                </button>
               ))}
             </div>
           </article>
@@ -175,6 +214,90 @@ const References = () => {
 
         <Aside />
       </section>
+      {isModalOpen && (
+        <div
+          className="gallery-modal"
+          role="dialog"
+          aria-modal="true"
+          style={{
+            position: "fixed",
+            inset: 0,
+            backgroundColor: "rgba(0,0,0,0.85)",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: "1rem",
+            zIndex: 9999,
+          }}
+        >
+          <button
+            onClick={closeModal}
+            aria-label="Fermer la galerie"
+            style={{
+              position: "absolute",
+              top: "1.5rem",
+              right: "1.5rem",
+              background: "transparent",
+              color: "#fff",
+              border: "2px solid rgba(255,255,255,0.8)",
+              borderRadius: "50%",
+              width: "48px",
+              height: "48px",
+              fontSize: "1.5rem",
+              cursor: "pointer",
+            }}
+          >
+            ×
+          </button>
+          <button
+            onClick={showPrevious}
+            aria-label="Image precedente"
+            style={{
+              position: "absolute",
+              left: "1rem",
+              background: "rgba(255,255,255,0.15)",
+              border: "1px solid rgba(255,255,255,0.35)",
+              color: "#fff",
+              borderRadius: "50%",
+              width: "48px",
+              height: "48px",
+              fontSize: "1.5rem",
+              cursor: "pointer",
+            }}
+          >
+            ‹
+          </button>
+          <img
+            src={galleryItems[activeIndex].image}
+            alt={galleryItems[activeIndex].title}
+            style={{
+              maxWidth: "90%",
+              maxHeight: "85%",
+              objectFit: "contain",
+              borderRadius: "12px",
+              boxShadow: "0 10px 40px rgba(0,0,0,0.5)",
+            }}
+          />
+          <button
+            onClick={showNext}
+            aria-label="Image suivante"
+            style={{
+              position: "absolute",
+              right: "1rem",
+              background: "rgba(255,255,255,0.15)",
+              border: "1px solid rgba(255,255,255,0.35)",
+              color: "#fff",
+              borderRadius: "50%",
+              width: "48px",
+              height: "48px",
+              fontSize: "1.5rem",
+              cursor: "pointer",
+            }}
+          >
+            ›
+          </button>
+        </div>
+      )}
       <ContactezNous />
     </div>
   );

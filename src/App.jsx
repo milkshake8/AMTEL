@@ -11,13 +11,26 @@ import SecuriteDomotique from './pages/securiteDomotique.jsx';
 import Energie from './pages/energie.jsx';
 import Formations from './pages/formations.jsx';
 import References from './pages/references.jsx';
+import Recrutement from './pages/recrutement.jsx';
 import Footer from './components/footer.jsx';
+import { Helmet } from 'react-helmet-async';
 
 function App() {
 
 
   return (
     <>
+      <Helmet>
+            <title>AMTEL Technologie SARL - Fourniture d'equipements, IT, securite, energie a Dakar</title>
+            <meta name="description" content="Decouvrez nos solutions en informatique, securite, domotique et energie solaire a Dakar. Installation et support professionnel." />
+            <link rel="canonical" href="https://amtel.sn/" />
+            <meta property="og:title" content="Amtel Technologies - Solutions technologiques a Dakar" />
+            <meta property="og:description" content="Integrateur a Dakar : equipements, IT, securite et solaire." />
+            <meta property="og:url" content="https://amtel.sn/" />
+            <meta property="og:type" content="website" />
+            <meta property="og:site_name" content="Amtel Technologie" />
+            <meta property="og:image" content="https://amtel.sn/logo-amtel.svg" />
+        </Helmet>
       <ScrollToHashElement />
       <Navbar />
       <Routes>
@@ -31,6 +44,7 @@ function App() {
           <Route path='/services/energie' element={<Energie />} />
           <Route path='/services/formations' element={<Formations />} />
           <Route path='/references' element={<References />} />
+          <Route path='/recrutement' element={<Recrutement />} />
           <Route path='*' element={<Navigate to='/' />} />
       </Routes>
       <Footer />

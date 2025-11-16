@@ -45,7 +45,7 @@ const IntegrationInformatique = () => {
   return (
     <div className="about-page">
       <Helmet>
-          <title>Integration informatique - Amtel Technologies</title>
+          <title>Integration informatique - Amtel Technologie</title>
           <meta name="description" content="Conception, integration et maintenance d'infrastructures informatiques sur mesure par Amtel Technologies." />
           <link rel="canonical" href="https://amtel.sn/services/integration-systemes" />
           <meta property="og:title" content="Integration informatique par Amtel Technologies" />

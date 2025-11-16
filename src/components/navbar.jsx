@@ -66,7 +66,7 @@ export default function Navbar() {
             </li>
             <li>
               <NavLink to="/a-propos" className={navLinkClass} onClick={closeMenu}>
-                Qui sommes-nous ?
+                Société
               </NavLink>
             </li>
             <li
