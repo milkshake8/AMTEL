@@ -156,13 +156,11 @@
 .ceo p {
   width: 100%;
   max-width: 654px;
-  border: 2px solid rgba(19, 36, 64, 0.2);
-  border-radius: 12px;
   padding: 5px;
   font-style: italic;
   font-size: 1.4rem;
   position: absolute;
-  top: 255px;
+  top: 130px;
   right: 2%;
 }
 

@@ -5,7 +5,7 @@ import systemes from "../css/css/assets/images/system2.webp";
 import Aside from "../components/aside.jsx";
 
 const service = {
-  title: "Integration informatique",
+  title: "Intégration informatique",
   img: systemes,
   imgDescription: "Illustration du service d'integration informatique",
   description: `<p>
@@ -58,7 +58,7 @@ const IntegrationInformatique = () => {
       <section className="about-banner" style={{ backgroundImage: `url(${aboutBanner})`, marginTop: "6px" }}>
         <div className="about-banner__overlay">
           <h1 style={{ color: "white", backgroundColor: "#259BAF", borderRadius: "11px", padding: "0 35px" }}>
-            Integration informatique
+            Intégration informatique
           </h1>
         </div>
       </section>

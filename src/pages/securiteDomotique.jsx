@@ -5,7 +5,7 @@ import securiteVisuel from "../css/css/assets/images/camera-surveillance2.webp";
 import Aside from "../components/aside.jsx";
 
 const service = {
-  title: "Securite et domotique",
+  title: "Sécurité et domotique",
   img: securiteVisuel,
   imgDescription: "Illustration du service securite et domotique",
   description: `<p>
@@ -52,7 +52,7 @@ const SecuriteDomotique = () => {
       <section className="about-banner" style={{ backgroundImage: `url(${aboutBanner})`, marginTop: "6px" }}>
         <div className="about-banner__overlay">
           <h1 style={{ color: "white", backgroundColor: "#259BAF", borderRadius: "11px", padding: "0 35px" }}>
-            Securite et domotique
+            Sécurié et domotique
           </h1>
         </div>
       </section>

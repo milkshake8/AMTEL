@@ -5,35 +5,35 @@ import aboutBanner from "../css/css/assets/images/bureau3.webp";
 import telecomVisuel from "../css/css/assets/images/guide-fibre-optique-vignette.webp";
 
 const service = {
-  title: "Telecoms et Reseaux",
+  title: "Télécoms et Réseaux",
   img: telecomVisuel,
   imgDescription: "Illustration des services telecoms Amtel",
   description: `<p>
       <strong>Amtel Technologie</strong> accompagne ses clients dans la conception,
-      le deploiement et la supervision de leurs <strong>infrastructures telecoms</strong>.
-      Nous integrons des solutions de <em>transmission</em>, de <em>fibre optique</em>,
-      de <em>reseaux sans fil</em> et de <em>connectivite IP</em> adaptees aux enjeux
-      des entreprises publiques et privees.
+      le déploiement et la supervision de leurs <strong>infrastructures télécoms</strong>.
+      Nous intégrons des solutions de <em>transmission</em>, de <em>fibre optique</em>,
+      de <em>réseaux sans fil</em> et de <em>connectivité IP</em> adaptées aux enjeux
+      des entreprises publiques et privées.
     </p>
 
     <p>
-      Nos equipes assurent les <strong>etudes de sites</strong>, la cartographie
-      des besoins, l'installation sur le terrain et la mise en service des equipements.
-      Nous mobilisons des techniciens certifies pour garantir un <strong>haut niveau
-      de disponibilite</strong>, la securisation des donnees et une exploitation
-      simplifiee via des outillages de supervision.
+      Nos équipes assurent les <strong>etudes de sites</strong>, la cartographie
+      des besoins, l'installation sur le terrain et la mise en service des équipements.
+      Nous mobilisons des techniciens certifiés pour garantir un <strong>haut niveau
+      de disponibilité</strong>, la sécurisation des données et une exploitation
+      simplifiée via des outillages de supervision.
     </p>
 
     <p>
       Nous proposons aussi des services de <strong>maintenance proactive</strong>,
-      d'optimisation radio, de gestion d'armoires PBO/OLT ainsi que des operations
-      de migration et d'interconnexion multi-sites. Chaque intervention est documentee
+      d'optimisation radio, de gestion d'armoires PBO/OLT ainsi que des opérations
+      de migration et d'interconnexion multi-sites. Chaque intervention est documentée
       et suivie avec des indicateurs de performance clairs.
     </p>
 
     <p>
-      Avec Amtel Technologie, vos reseaux telecom deviennent un veritable accelerateur
-      de productivite et de transformation numerique.
+      Avec Amtel Technologie, vos réseaux télécom deviennent un véritable accélérateur
+      de productivité et de transformation numérique.
     </p>`,
 };
 
@@ -70,7 +70,7 @@ const Telecoms = () => {
               padding: "0 35px",
             }}
           >
-            Telecoms & Reseaux
+            Télécoms & Réseaux
           </h1>
         </div>
       </section>

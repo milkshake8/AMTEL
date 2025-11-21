@@ -48,22 +48,22 @@ const Recrutement = () => {
             <div className="separateur" style={{ width: '280px' }}></div>
             <p>
               Chez <strong>Amtel Technologie</strong>, nous croyons que chaque
-              talent merite un environnement ou il peut apprendre, partager et
+              talent mérite un environnement ou il peut apprendre, partager et
               impacter des projets concrets. Nous accompagnons des clients
-              exigeants dans les domaines de l&rsquo;IT, de la securite des
-              infrastructures et des energies renouvelables.
+              exigeants dans les domaines de l&rsquo;IT, de la sécurité des
+              infrastructures et des énergies renouvelables.
             </p>
             <p>
-              En nous rejoignant, vous evoluerez au sein d&rsquo;une equipe
-              passionnee, ou la rigueur, la creativite et l&rsquo;esprit
-              d&rsquo;initiative sont valorises. Nous investissons dans la
-              formation continue et proposons des parcours d&rsquo;integration
-              personnalises pour chacune de nos recrues.
+              En nous rejoignant, vous évoluerez au sein d&rsquo;une équipe
+              passionnée, ou la rigueur, la créativite et l&rsquo;esprit
+              d&rsquo;initiative sont valorisés. Nous investissons dans la
+              formation continue et proposons des parcours d&rsquo;intégration
+              personnalisés pour chacune de nos recrues.
             </p>
           </article>
 
           <article className="about-block">
-            <h2 className="text-primary mb-sm">Deposez votre candidature</h2>
+            <h2 className="text-primary mb-sm">Déposez votre candidature</h2>
             <div className="separateur" style={{ width: '320px' }}></div>
             <form
               className="recruitment-form"
@@ -103,7 +103,7 @@ const Recrutement = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="phone">Telephone *</label>
+                  <label htmlFor="phone">Téléphone *</label>
                   <input
                     id="phone"
                     name="phone"
@@ -115,10 +115,10 @@ const Recrutement = () => {
                 <div className="form-group">
                   <label htmlFor="role">Poste souhaite *</label>
                   <select id="role" name="role" required>
-                    <option value="">Selectionner une option</option>
-                    <option value="Ingenieur Systemes">Ingenieur systemes</option>
+                    <option value="">Séléctionner une option</option>
+                    <option value="Ingenieur Systemes">Ingénieur systemes</option>
                     <option value="Technicien Energie">
-                      Technicien energie solaire
+                      Technicien énergie solaire
                     </option>
                     <option value="Consultant IT">Consultant IT</option>
                     <option value="Commercial">Commercial / Business Developer</option>
@@ -138,7 +138,7 @@ const Recrutement = () => {
                   required
                 />
                 <small className="cv-hint">
-                  Le fichier est envoye et stocke de maniere securisee via Netlify.
+                  Le fichier est envoyé et stocke de maniere securisee via nos serveurs.
                 </small>
               </div>
 

@@ -5,7 +5,7 @@ import energieVisuel from "../css/css/assets/images/panneau-solaire2.webp";
 import Aside from "../components/aside.jsx";
 
 const service = {
-  title: "Energie",
+  title: "Énergie",
   img: energieVisuel,
   imgDescription: "Illustration du service energie",
   description: `<p>
@@ -53,7 +53,7 @@ const Energie = () => {
       <section className="about-banner" style={{ backgroundImage: `url(${aboutBanner})`, marginTop: "6px" }}>
         <div className="about-banner__overlay">
           <h1 style={{ color: "white", backgroundColor: "#259BAF", borderRadius: "11px", padding: "0 35px" }}>
-            Energie
+            Énergie
           </h1>
         </div>
       </section>

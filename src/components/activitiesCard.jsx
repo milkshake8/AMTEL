@@ -9,7 +9,7 @@ import formations from "../css/css/assets/images/Formations.webp";
 export default function ActivitiesCard() {
     return (
         <div>
-            <h1 className="flex-center" style={{marginTop:"37px"}}>Nos activites</h1>
+            <h2 className="flex-center" style={{marginTop:"37px"}}>Nos activités</h2>
             <div className="flex-center" style={{marginTop:"-23px"}}><div className="separateur "></div></div>
             <div className="container"> 
             <div className="grid grid-3">

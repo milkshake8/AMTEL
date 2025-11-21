@@ -60,10 +60,8 @@ const referenceLogos = [
 const autreItems = [
   { id: 1, image: formationAmtel, title: "Formation Amtel Technologie Dakar" },
   { id: 4, image: projetMtoa, title: "Projet MTOA" },
-  { id: 8, image: stockEquipements, title: "Stock equipements" },
   { id: 9, image: technicienIntervention, title: "Technicien d'intervention" },
   { id: 10, image: technicienIntervention2, title: "Technicien d'intervention 2" },
-  { id: 23, image: magasin, title: "Magasin Amtel" },
 ];
 
 const energieItems = [
@@ -77,6 +75,7 @@ const energieItems = [
   { id: 20, image: installationPanneauxSolaires3, title: "Installation panneaux solaires - 3" },
   { id: 21, image: installationPanneauxSolaires4, title: "Installation panneaux solaires - 4" },
   { id: 22, image: installationPanneauxSolaires5, title: "Installation panneaux solaires - 5" },
+
   
 ]
 
@@ -100,7 +99,8 @@ const radioItems = [
   { id: 28, image: projetRadioBts, title: "Projet radio BTS" },
   { id: 29, image: projetRadioBts2, title: "Projet radio BTS - 2" },
   { id: 30, image: pylonesRadioBts, title: "Pylones radio BTS" },
-
+  { id: 8, image: stockEquipements, title: "Stock equipements" },
+  { id: 23, image: magasin, title: "Magasin Amtel" },
 ]
 
 
@@ -216,7 +216,7 @@ const References = () => {
             <div className="separateur" style={{ width: "127px" }}></div>
             <p>
               Cliquez sur une vignette pour afficher le visuel en grand format et
-              decouvrir les activites realisees sur le terrain.
+              découvrir les activités realisées sur le terrain.
             </p>
             <h2 className="text-primary mb-sm">Radio</h2>
             <div
@@ -373,7 +373,7 @@ const References = () => {
                 </button>
               ))}
             </div>
-            <h2 className="text-primary mb-sm" style={{marginTop:'25px'}}>Autres</h2>
+            <h2 className="text-primary mb-sm" style={{marginTop:'25px'}}>Formation & Solutions informatiques</h2>
             <div
               className="gallery-grid"
               style={{

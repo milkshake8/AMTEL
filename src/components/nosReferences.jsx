@@ -25,6 +25,7 @@ const NosReferences = () => {
     <section className="section bg-light">
       <div className="container text-center">
         <h2 className="text-primary mb-md">Nos Références</h2>
+        <div className="flex-center" style={{marginTop:"-23px"}}><div className="separateur "></div></div>
         <p>Nos partenaires qui nous ont fait confiance et qui en ont tiré totale satisfaction!</p>
 
         <div className="references-wrapper">
