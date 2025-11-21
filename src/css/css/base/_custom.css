@@ -149,6 +149,27 @@
   line-height: 1.7;
 }
 
+.ceo {
+  margin-left: 40px;
+  position: relative;
+}
+.ceo p {
+  width: 100%;
+  max-width: 654px;
+  border: 2px solid rgba(19, 36, 64, 0.2);
+  border-radius: 12px;
+  padding: 5px;
+  font-style: italic;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 255px;
+  right: 2%;
+}
+
+.ceo h6 {
+  margin-top: -19px;
+}
+
 .ceo-portrait {
   float: left;
   width: clamp(180px, 25vw, 260px);
@@ -159,13 +180,30 @@
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1313px) {
   .ceo-portrait {
     float: none;
     display: block;
     margin: 0 auto 1.5rem auto;
     width: min(80%, 260px);
   }
+  .ceo {
+  position: static;
+  display: flex;
+  flex-direction: column;
+}
+.ceo p {
+  width: 100%;
+  border: 2px solid rgba(19, 36, 64, 0.2);
+  border-radius: 12px;
+  padding: 5px;
+  font-style: italic;
+  font-size: 1.7rem;
+  position: static;
+}
+.ceo h6,h5 {
+  text-align: center;
+}
 }
 
 .recruitment-intro p {
@@ -320,7 +358,7 @@
 }
 
 .landing-hero__title {
-  font-size: clamp(2.5rem, 5vw, 4.75rem);
+  font-size: clamp(2.5rem, 3vw, 4.75rem);
   line-height: 1.05;
   font-weight: 700;
   letter-spacing: -0.02em;

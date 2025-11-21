@@ -1,4 +1,11 @@
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+
+const whatsappLink = 'https://wa.me/221776198974?text=Bonjour%20Amtel%20Technologie%20!';
+
 
 const Footer = () => {
   return (
@@ -74,6 +81,11 @@ const Footer = () => {
             <br />
             ✉️ <a href="mailto:diop79.malick@gmail.com" className="links">contact@amtel-technologie.com</a>
           </p>
+          <div>
+          <a href="#"><FontAwesomeIcon icon={faLinkedin} color='white' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
+          <a href={whatsappLink} target='_blank'><FontAwesomeIcon icon={faWhatsapp} color='white' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
+          <a href="#"><FontAwesomeIcon icon={faFacebook} color='white' /></a>
+          </div>
           <NavLink to="/contact">
           <button
             className="bg-secondary rounded-md p-md shadow-md mt-md"

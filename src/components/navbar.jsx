@@ -4,8 +4,12 @@ import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
-import amtelLogo from '../css/css/assets/logos/logo-amtel.svg'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+
+const whatsappLink = 'https://wa.me/221776198974?text=Bonjour%20Amtel%20Technologie%20!';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -46,7 +50,14 @@ export default function Navbar() {
     <>
     <div className='top'>
         <div><FontAwesomeIcon icon={faClock} />&thinsp;&thinsp;Ouvert : Lundi - Vendredi | 8h:00 - 18h:30</div>
-        <div><FontAwesomeIcon icon={faPhone} /><a style={{color:"white"}} href="tel: +221 77 619 89 74">&thinsp;&thinsp;+221 77 619 89 74 </a> &thinsp;&thinsp;|&thinsp;&thinsp; <FontAwesomeIcon icon={faEnvelope} /> <a style={{color:"white"}} href="mailto:mouhamadoubn@hotmail.com">&thinsp;&thinsp;contact@amtel-technologies.sn</a> </div>
+        <div>
+          <FontAwesomeIcon icon={faPhone} /><a style={{color:"white"}} href="tel: +221 77 619 89 74">&thinsp;&thinsp;+221 77 619 89 74 </a>
+          &thinsp;&thinsp;|&thinsp;&thinsp; <FontAwesomeIcon icon={faEnvelope} />
+          <a style={{color:"white"}} href="mailto:mouhamadoubn@hotmail.com">&thinsp;&thinsp;contact@amtel.sn &thinsp;&thinsp;|&thinsp;&thinsp;</a>
+          <a href="#"><FontAwesomeIcon icon={faLinkedin} color='white' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
+          <a href={whatsappLink} target='_blank'><FontAwesomeIcon icon={faWhatsapp} color='white' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
+          <a href="#"><FontAwesomeIcon icon={faFacebook} color='white' /></a>
+        </div>
     </div>
     <nav className="navbar">
       <div className="navbar-container">
@@ -127,6 +138,18 @@ export default function Navbar() {
                     }}
                   >
                     Sécurité & domotique
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/services/telecoms"
+                    className={navLinkClass}
+                    onClick={() => {
+                      closeMenu()
+                      setIsDropdownOpen(false)
+                    }}
+                  >
+                    Télécoms & réseaux
                   </NavLink>
                 </li>
                 <li>

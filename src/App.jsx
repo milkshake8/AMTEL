@@ -10,6 +10,7 @@ import IntegrationInformatique from './pages/integrationInformatique.jsx';
 import SecuriteDomotique from './pages/securiteDomotique.jsx';
 import Energie from './pages/energie.jsx';
 import Formations from './pages/formations.jsx';
+import Telecoms from './pages/telecoms.jsx';
 import References from './pages/references.jsx';
 import Recrutement from './pages/recrutement.jsx';
 import Footer from './components/footer.jsx';
@@ -42,6 +43,7 @@ function App() {
           <Route path='/services/integration-systemes' element={<IntegrationInformatique />} />
           <Route path='/services/securite-domotique' element={<SecuriteDomotique />} />
           <Route path='/services/energie' element={<Energie />} />
+          <Route path='/services/telecoms' element={<Telecoms />} />
           <Route path='/services/formations' element={<Formations />} />
           <Route path='/references' element={<References />} />
           <Route path='/recrutement' element={<Recrutement />} />

@@ -37,12 +37,22 @@ const AboutUs = () => {
           <article className="about-block">
               <h2 className="text-primary mb-sm">Mots du CEO</h2>
               <div className="separateur" style={{width:'216px'}}></div>
-              <img
-                src={ceoPortrait}
-                alt="CEO d'Amtel Technologie"
-                className="ceo-portrait"
-                loading="lazy"
-              />
+              <div className="ceo flex align-center mb-sm">
+                <div className="flex-column align-center mb-sm">
+                  <img
+                    src={ceoPortrait}
+                    alt="CEO d'Amtel Technologie"
+                    className="ceo-portrait"
+                    loading="lazy"
+                  >
+                  </img>
+                  <h5>Mohamadou B. N'Diaye</h5>
+                  <h6>Fondateur & CEO</h6>
+                </div>
+                <div  className="citation">
+                  <p>"La satisfaction des clients est notre crédo. Il ne suffit pas de fournir des solutions, mais de pousser le service au summum du perfectionnement."</p>
+                </div>
+              </div>
               <p>
                 Animés par le désir d’apprendre et de grandir, nous avons suivi un parcours académique classique 
                 jusqu’à l’obtention de notre licence, avant de poursuivre nos études en école de commerce en France, au niveau Master.<br/>
@@ -137,41 +147,41 @@ const AboutUs = () => {
                 <div>
                   <p style={{ fontWeight: 600 }}>Q1 : Quels services propose AMTEL ?</p>
                   <p>
-                    AMTEL fournit des solutions informatiques, domotiques, de securite electronique et d'energie solaire,
-                    adaptees aux besoins des particuliers comme des entreprises.
+                    AMTEL fournit des solutions informatiques, domotiques, de sécurité électronique et d'énergie solaire,
+                    Adaptées aux besoins des particuliers comme des entreprises.
                   </p>
                 </div>
                 <div>
-                  <p style={{ fontWeight: 600 }}>Q2 : Intervenez-vous dans tout le Senegal ?</p>
+                  <p style={{ fontWeight: 600 }}>Q2 : Intervenez-vous dans tout le Sénégal ?</p>
                   <p>
-                    Oui. Basee a Dakar, AMTEL intervient partout au Senegal et peut accompagner des projets dans la sous-region.
+                    Oui. Basée à Dakar, AMTEL intervient partout au Sénégal et peut accompagner des projets dans la sous-région.
                   </p>
                 </div>
                 <div>
                   <p style={{ fontWeight: 600 }}>Q3 : Proposez-vous un diagnostic ou un devis gratuit ?</p>
                   <p>
-                    Oui, chaque projet commence par un diagnostic detaille et un devis gratuit.
+                    Oui. Basée à Dakar, AMTEL intervient partout au Sénégal et peut accompagner des projets dans la sous-région.
                   </p>
                 </div>
                 <div>
                   <p style={{ fontWeight: 600 }}>Q4 : Que se passe-t-il en cas de panne ou probleme technique ?</p>
                   <p>
-                    Nos equipes assurent un support rapide et peuvent intervenir sur site pour resoudre vos problemes dans les
-                    meilleurs delais.
+                    Nos équipes assurent un support rapide et peuvent intervenir sur site pour résoudre vos problèmes dans les
+                    Meilleurs délais.
                   </p>
                 </div>
                 <div>
-                  <p style={{ fontWeight: 600 }}>Q5 : Installez-vous des systemes de securite pour les entreprises ?</p>
+                  <p style={{ fontWeight: 600 }}>Q5 : Installez-vous des systemes de sécurité pour les entreprises ?</p>
                   <p>
-                    Oui. Nous installons des solutions de videosurveillance, controle d'acces, alarmes, systemes de gestion et
+                   Oui. Nous installons des solutions de vidéosurveillance, contrôle d'accès, alarmes, systèmes de gestion et
                     dispositifs anti-intrusion.
                   </p>
                 </div>
                 <div>
                   <p style={{ fontWeight: 600 }}>Q6 : Offrez-vous une garantie sur vos installations ?</p>
                   <p>
-                    Oui. Tous nos equipements et installations beneficient d'une garantie constructeur plus une garantie
-                    d'installation AMTEL.
+                    Oui. Tous nos équipements et installations bénéficient d'une garantie constructeur, plus une garantie
+                    D'installation AMTEL.
                   </p>
                 </div>
               </div>
@@ -184,7 +194,7 @@ const AboutUs = () => {
                 Vous êtes <strong>jeune motive et dynamique?</strong><br />
                 Vous êtes prêt à <strong> faire valoir votre talent?</strong><br />
                 Rejoignez notre équipe grandissante et <strong> faites évoluer votre carrière!</strong><br />
-                Envoyez-nous votre CV et lettre de motivation ici.
+                Envoyez-nous votre CV et lettre de motivation via notre page de recrutement.
               </p>
               <NavLink to="/recrutement" className="btn btn-primary">
                 Postuler ici
