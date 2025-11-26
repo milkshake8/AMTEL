@@ -55,9 +55,9 @@ export default function Navbar() {
           <FontAwesomeIcon icon={faPhone} /><a style={{color:"white"}} href="tel: +221 77 619 89 74">&thinsp;&thinsp;+221 77 619 89 74 </a>
           &thinsp;&thinsp;|&thinsp;&thinsp; <FontAwesomeIcon icon={faEnvelope} />
           <a style={{color:"white"}} href="mailto:mouhamadoubn@hotmail.com">&thinsp;&thinsp;contact@amtel.sn &thinsp;&thinsp;|&thinsp;&thinsp;</a>
-          <a href="#"><FontAwesomeIcon icon={faLinkedin} color='white' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
-          <a href={whatsappLink} target='_blank'><FontAwesomeIcon icon={faWhatsapp} color='white' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
-          <a href="https://www.facebook.com/share/1ASXCrrK5G/?mibextid=wwXIfr"><FontAwesomeIcon icon={faFacebook} color='white' /></a>
+          <a href="#"><FontAwesomeIcon icon={faLinkedin} color='white' target='_blank' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
+          <a href={whatsappLink} target='_blank'><FontAwesomeIcon icon={faWhatsapp} color='white' target='_blank' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
+          <a href="https://www.facebook.com/share/1ASXCrrK5G/?mibextid=wwXIfr" target='_blank'><FontAwesomeIcon icon={faFacebook} color='white' /></a>
         </div>
     </div>
     <nav className="navbar">

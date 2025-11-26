@@ -7,6 +7,7 @@ import domotique from "../css/css/assets/images/domotique1.webp";
 import panneaux from "../css/css/assets/images/panneaux-solaires.webp";
 import fournitures from "../css/css/assets/images/equipements.webp";
 import systemes from "../css/css/assets/images/system.webp";
+import reseaux from "../css/css/assets/images/reseaux.webp"
 
 
 
@@ -17,6 +18,12 @@ const Activites = () => {
       description:
         "Nous mettons à votre disposition une large gamme d’équipements professionnels et techniques pensés pour répondre aux besoins de tous les secteurs d’activité. Chaque produit que nous proposons allie performance, durabilité et innovation, pour vous offrir une expérience à la hauteur de vos ambitions.",
       img: fournitures,
+    },
+    {
+      title: "Réseaux & Télécommunications",
+      description:
+        "Nous concevons, déployons et optimisons des infrastructures réseau performantes pour garantir une connectivité fiable, rapide et sécurisée. De la fibre optique au Wi-Fi professionnel en passant par le câblage structuré, nos solutions s’adaptent à vos enjeux opérationnels et accompagnent la croissance de votre organisation.",
+      img: reseaux,
     },
     {
       title: "Solutions Informatiques",

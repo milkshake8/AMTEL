@@ -13,9 +13,6 @@ export default function LandingPage() {
         <h1 className="landing-hero__title">
           AMTEL - Réinventons l'énergie.
         </h1>
-        <p className="landing-hero__subtitle">
-          <em>Services de qualité exceptionnelle et innovante!</em>
-        </p>
         <div className="landing-hero__actions">
           <NavLink to="/contact" className="btn btn-primary btn-lg hero-btn">
             Demander un devis
