@@ -59,6 +59,11 @@ const Footer = () => {
               </NavLink>
             </li>
             <li>
+              <NavLink className="links" to="/services/telecoms#service">
+                <i className="fa-solid fa-arrow-right"></i> Réseaux et Télécommunications
+              </NavLink>
+            </li>
+            <li>
               <NavLink to="/services/energie#service" className="links">
                 <i className="fa-solid fa-arrow-right"></i> Energie
               </NavLink>
