@@ -27,7 +27,7 @@ export default function ActivitiesCard() {
                 </div>
 
                 <div className="card">
-                    <div className="card-header">Intégration systèmes</div>
+                    <div className="card-header">Télécommunications & Intégration systèmes</div>
                     <div>
                         <img src={systemes} alt="Image de la carte" loading="lazy" style={{width: "100%", height: "200px", objectFit: "cover", borderRadius: "inherit"}} />
                     </div>

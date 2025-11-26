@@ -147,7 +147,7 @@ const AboutUs = () => {
                 <div>
                   <p style={{ fontWeight: 600 }}>Q1 : Quels services propose AMTEL ?</p>
                   <p>
-                    AMTEL fournit des solutions informatiques, domotiques, de sécurité électronique et d'énergie solaire,
+                    AMTEL fournit des solutions informatiques, domotiques, de sécurité électronique, de réseaux et télécoms et d'énergie solaire,
                     Adaptées aux besoins des particuliers comme des entreprises.
                   </p>
                 </div>
@@ -160,7 +160,7 @@ const AboutUs = () => {
                 <div>
                   <p style={{ fontWeight: 600 }}>Q3 : Proposez-vous un diagnostic ou un devis gratuit ?</p>
                   <p>
-                    Oui. Basée à Dakar, AMTEL intervient partout au Sénégal et peut accompagner des projets dans la sous-région.
+                    Oui. Nous réalisons une analyse gratuite de votre besoin et proposons un devis détaillé sans engagement, afin de vous orienter vers la solution la plus adaptée.
                   </p>
                 </div>
                 <div>
@@ -184,6 +184,42 @@ const AboutUs = () => {
                     D'installation AMTEL.
                   </p>
                 </div>
+
+                <div>
+                  <p style={{ fontWeight: 600 }}>Q7 : Proposez-vous des services de câblage réseau et fibre optique ?</p>
+                  <p>
+                    Oui. AMTEL réalise le câblage réseau (RJ45, baies de brassage, LAN) et l'installation de fibre optique
+                    pour les entreprises, magasins, immeubles, data centers et r?sidences.
+                  </p>
+                </div>
+                <div>
+                  <p style={{ fontWeight: 600 }}>Q8 : Faites-vous le tirage et le soudage de fibre optique ?</p>
+                  <p>
+                    Oui. Nos techniciens assurent le tirage, le raccordement, la fusion (soudure) de fibre optique, ainsi que
+                    les tests de continuité et de réflectométrie (OTDR).
+                  </p>
+                </div>
+                <div>
+                  <p style={{ fontWeight: 600 }}>Q9 : Pouvez-vous diagnostiquer une panne sur un réseau fibre optique ?</p>
+                  <p>
+                    Oui. Nous disposons des outils professionnels pour identifier rapidement les pertes, ruptures,
+                    affaiblissements ou d?fauts de connectique sur votre r?seau fibre.
+                  </p>
+                </div>
+                <div>
+                  <p style={{ fontWeight: 600 }}>Q10 : Installez-vous des réseaux Wi-Fi professionnels ?</p>
+                  <p>
+                    Oui. Nous déployons des réseaux Wi-Fi haut débit pour bureaux, hôtels, restaurants, magasins et domiciles,
+                    avec gestion centralisée, roaming et couverture optimisée.
+                  </p>
+                </div>
+                <div>
+                  <p style={{ fontWeight: 600 }}>Q11 : Offrez-vous la maintenance des réseaux informatiques et télécoms ?</p>
+                  <p>
+                    Oui. AMTEL assure la maintenance préventive et corrective de vos équipements réseaux : switches, routeurs,
+                    points d'accés, serveurs, onduleurs, systèmes de sauvegarde, etc.
+                  </p>
+                </div>
               </div>
             </article>
 
@@ -191,7 +227,7 @@ const AboutUs = () => {
               <h2 className="text-primary mb-sm">Recrutement</h2>
               <div className="separateur" style={{width:'193px'}}></div>
               <p>
-                Vous êtes <strong>jeune motive et dynamique?</strong><br />
+                Vous êtes <strong>jeune motivé et dynamique?</strong><br />
                 Vous êtes prêt à <strong> faire valoir votre talent?</strong><br />
                 Rejoignez notre équipe grandissante et <strong> faites évoluer votre carrière!</strong><br />
                 Envoyez-nous votre CV et lettre de motivation via notre page de recrutement.

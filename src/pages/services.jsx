@@ -32,6 +32,7 @@ const Services = () => {
         <div className="about-main">
           <div className="services-intro">
             <h2>Nos services</h2>
+            <div className="flex-center" style={{marginTop:"-23px"}}><div className="separateur "></div></div>
 
             <p>
               Chez <strong>Amtel Technologie</strong>, nous mettons notre expertise multidisciplinaire au service 

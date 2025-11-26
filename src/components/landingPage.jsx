@@ -11,7 +11,7 @@ export default function LandingPage() {
     >
       <div className="landing-hero__content">
         <h1 className="landing-hero__title">
-          AMTEL - Réinventons l'énergie, perfectionnons la qualité.
+          AMTEL - Réinventons l'énergie.
         </h1>
         <p className="landing-hero__subtitle">
           <em>Services de qualité exceptionnelle et innovante!</em>

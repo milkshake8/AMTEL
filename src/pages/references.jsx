@@ -169,7 +169,7 @@ const References = () => {
               padding: "0 10px",
             }}
           >
-            Nos references
+            Nos références
           </h1>
         </div>
       </section>
@@ -177,11 +177,10 @@ const References = () => {
       <section className="section about-content">
         <div className="about-main">
           <article className="about-block">
-            <h2 className="text-primary mb-sm">No references</h2>
+            <h2 className="text-primary mb-sm">Nos références</h2>
             <div className="separateur" style={{ width: "235px" }}></div>
             <p>
-              Une selection des organisations qui nous accompagnent et nous font confiance
-              sur des missions strategiques et operationnelles.
+              Une sélection d’organisations qui nous accompagnent et nous font confiance sur des missions stratégiques et opérationnelles.
             </p>
             <div
               className="references-logos-grid"

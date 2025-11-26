@@ -84,7 +84,7 @@ const Footer = () => {
           <div>
           <a href="#"><FontAwesomeIcon icon={faLinkedin} color='white' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
           <a href={whatsappLink} target='_blank'><FontAwesomeIcon icon={faWhatsapp} color='white' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
-          <a href="#"><FontAwesomeIcon icon={faFacebook} color='white' /></a>
+          <a href="https://www.facebook.com/share/1ASXCrrK5G/?mibextid=wwXIfr"><FontAwesomeIcon icon={faFacebook} color='white' /></a>
           </div>
           <NavLink to="/contact">
           <button

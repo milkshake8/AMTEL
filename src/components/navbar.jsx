@@ -8,6 +8,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+import brandLogo from "../css/css/assets/logos/logo-amtel.svg"
 
 const whatsappLink = 'https://wa.me/221776198974?text=Bonjour%20Amtel%20Technologie%20!';
 
@@ -56,13 +57,15 @@ export default function Navbar() {
           <a style={{color:"white"}} href="mailto:mouhamadoubn@hotmail.com">&thinsp;&thinsp;contact@amtel.sn &thinsp;&thinsp;|&thinsp;&thinsp;</a>
           <a href="#"><FontAwesomeIcon icon={faLinkedin} color='white' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
           <a href={whatsappLink} target='_blank'><FontAwesomeIcon icon={faWhatsapp} color='white' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
-          <a href="#"><FontAwesomeIcon icon={faFacebook} color='white' /></a>
+          <a href="https://www.facebook.com/share/1ASXCrrK5G/?mibextid=wwXIfr"><FontAwesomeIcon icon={faFacebook} color='white' /></a>
         </div>
     </div>
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="navbar-brand" onClick={() => scrollToSection("home")}><NavLink to="/" >
-              AMTEL
+        <div className="navbar-brand" style={{display:"inline-flex", alignItems:"center"}} onClick={() => scrollToSection("home")}><NavLink to="/" >
+             <div style={{display:"inline-flex", alignItems:"center"}}><div><img src={brandLogo} loading="lazy"/></div>
+              <p style={{marginTop:"13px", marginLeft:"-10px"}}>Amtel.</p>
+              </div>
             </NavLink></div>
 
         <button className="navbar-toggle" onClick={toggleMenu}>

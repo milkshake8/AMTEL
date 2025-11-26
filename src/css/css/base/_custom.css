@@ -306,7 +306,7 @@
 }
 
 .services-intro strong {
-  color: #BF092F;
+  color: #16476A;
 }
 
 .landing-hero {
@@ -438,6 +438,7 @@
   .landing-hero {
     min-height: 80vh;
     padding: 2rem 1.5rem;
+    background-position: right;
   }
 
   .landing-hero__content {
