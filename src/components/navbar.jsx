@@ -50,14 +50,14 @@ export default function Navbar() {
   return (
     <>
     <div className='top'>
-        <div><FontAwesomeIcon icon={faClock} />&thinsp;&thinsp;Ouvert : Lundi - Vendredi | 8h:00 - 18h:30</div>
+        <div>Bienvenue</div>
         <div>
-          <FontAwesomeIcon icon={faPhone} /><a style={{color:"white"}} href="tel: +221 77 619 89 74">&thinsp;&thinsp;+221 77 619 89 74 </a>
-          &thinsp;&thinsp;|&thinsp;&thinsp; <FontAwesomeIcon icon={faEnvelope} />
-          <a style={{color:"white"}} href="mailto:mouhamadoubn@hotmail.com">&thinsp;&thinsp;contact@amtel.sn &thinsp;&thinsp;|&thinsp;&thinsp;</a>
-          <a href="#"><FontAwesomeIcon icon={faLinkedin} color='white' target='_blank' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
-          <a href={whatsappLink} target='_blank'><FontAwesomeIcon icon={faWhatsapp} color='white' target='_blank' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
-          <a href="https://www.facebook.com/share/1ASXCrrK5G/?mibextid=wwXIfr" target='_blank'><FontAwesomeIcon icon={faFacebook} color='white' /></a>
+          <FontAwesomeIcon icon={faPhone} />&thinsp;&thinsp;<a className='links' href="tel: +221 77 619 89 74">+221 77 619 89 74 </a>
+          &thinsp;&thinsp;|&thinsp;&thinsp; <FontAwesomeIcon icon={faEnvelope} />&thinsp;&thinsp;
+          <a className='links' href="mailto:contact@amtel.sn">contact@amtel.sn</a>&thinsp;&thinsp;|&thinsp;&thinsp;
+          <a className='links' href="#"><FontAwesomeIcon icon={faLinkedin} target='_blank' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
+          <a className='links' href={whatsappLink} target='_blank'><FontAwesomeIcon icon={faWhatsapp} target='_blank' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
+          <a className='links' href="https://www.facebook.com/share/1ASXCrrK5G/?mibextid=wwXIfr" target='_blank'><FontAwesomeIcon icon={faFacebook} /></a>
         </div>
     </div>
     <nav className="navbar">

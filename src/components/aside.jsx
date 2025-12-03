@@ -16,7 +16,7 @@ export default function Aside() {
             <p>
               📍 Ouest Foire, Dakar, Sénégal <br />
               📞 +221 77 619 89 74 <br />
-              ✉️ contact@amtel.com
+              ✉️ <a href="mailto:contact@amtel.sn" className="linksaside">contact@amtel.sn</a>
             </p>
           </div>
         </aside>

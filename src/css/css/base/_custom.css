@@ -54,6 +54,15 @@
   color: var(--color-secondary);
   text-decoration: underline;
 }
+.linksaside {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+.linksaside:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
 @keyframes progressAnim {
   from {
     width: 0%;

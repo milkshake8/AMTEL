@@ -84,12 +84,12 @@ const Footer = () => {
             <br />
             📞 <a href="tel:+221 77 619 89 74" className="links">+221 77 619 89 74</a>  
             <br />
-            ✉️ <a href="mailto:diop79.malick@gmail.com" className="links">contact@amtel-technologie.com</a>
+            ✉️ <a href="mailto:contact@amtel.sn" className="links">contact@amtel.sn</a>
           </p>
           <div>
-          <a href="#"><FontAwesomeIcon icon={faLinkedin} color='white' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
-          <a href={whatsappLink} target='_blank'><FontAwesomeIcon icon={faWhatsapp} color='white' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
-          <a href="https://www.facebook.com/share/1ASXCrrK5G/?mibextid=wwXIfr"><FontAwesomeIcon icon={faFacebook} color='white' /></a>
+          <a className='links' href="#"><FontAwesomeIcon icon={faLinkedin} /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
+          <a className='links' href={whatsappLink} target='_blank'><FontAwesomeIcon icon={faWhatsapp} /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
+          <a className='links' href="https://www.facebook.com/share/1ASXCrrK5G/?mibextid=wwXIfr"><FontAwesomeIcon icon={faFacebook} /></a>
           </div>
           <NavLink to="/contact">
           <button
