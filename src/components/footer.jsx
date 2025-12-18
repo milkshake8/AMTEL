@@ -87,7 +87,7 @@ const Footer = () => {
             ✉️ <a href="mailto:contact@amtel.sn" className="links">contact@amtel.sn</a>
           </p>
           <div>
-          <a className='links' href="#"><FontAwesomeIcon icon={faLinkedin} /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
+          <a className='links' href="https://www.linkedin.com/in/amtel-technologie-62105a394?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target='_blank'><FontAwesomeIcon icon={faLinkedin} /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
           <a className='links' href={whatsappLink} target='_blank'><FontAwesomeIcon icon={faWhatsapp} /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
           <a className='links' href="https://www.facebook.com/share/1ASXCrrK5G/?mibextid=wwXIfr"><FontAwesomeIcon icon={faFacebook} /></a>
           </div>

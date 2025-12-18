@@ -55,7 +55,7 @@ export default function Navbar() {
           <FontAwesomeIcon icon={faPhone} />&thinsp;&thinsp;<a className='links' href="tel: +221 77 619 89 74">+221 77 619 89 74 </a>
           &thinsp;&thinsp;|&thinsp;&thinsp; <FontAwesomeIcon icon={faEnvelope} />&thinsp;&thinsp;
           <a className='links' href="mailto:contact@amtel.sn">contact@amtel.sn</a>&thinsp;&thinsp;|&thinsp;&thinsp;
-          <a className='links' href="#"><FontAwesomeIcon icon={faLinkedin} target='_blank' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
+          <a className='links' href="https://www.linkedin.com/in/amtel-technologie-62105a394?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target='_blank'><FontAwesomeIcon icon={faLinkedin} target='_blank' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
           <a className='links' href={whatsappLink} target='_blank'><FontAwesomeIcon icon={faWhatsapp} target='_blank' /></a>&thinsp;&thinsp;|&thinsp;&thinsp;
           <a className='links' href="https://www.facebook.com/share/1ASXCrrK5G/?mibextid=wwXIfr" target='_blank'><FontAwesomeIcon icon={faFacebook} /></a>
         </div>
